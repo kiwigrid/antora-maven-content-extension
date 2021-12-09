@@ -1,0 +1,16 @@
+name: PR
+on: pull_request
+jobs:
+  conventional:
+    name: Conventional PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: npm ci
+      - run: npm test
+      - uses: actions/upload-artifact@v2
+        if: success() || failure()
+        with:
+          name: test-results
+          path: test-results.json

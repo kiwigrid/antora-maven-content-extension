@@ -1,0 +1,37 @@
+{
+	"name": "@kiwigrid/antora-maven-content",
+	"version": "0.0.1",
+	"description": "// TODO",
+	"contributors": [
+		{
+			"name": "Jörg Eichhorn",
+			"email": "joerg@kiwigrid.com"
+		}
+	],
+	"keywords": [
+		"antora",
+		"maven"
+	],
+	"license": "MIT",
+	"type": "commonjs",
+	"main": "lib/extension.js",
+	"dependencies": {
+		"libxmljs2": "^0.29.0",
+		"node-fetch": "^2.6.6",
+		"semver": "^7.3.5",
+		"sha1": "^1.1.1",
+		"tar": "^6.1.11",
+		"unzip-stream": "^0.3.1"
+	},
+	"devDependencies": {
+		"chai": "*",
+		"mocha": "*",
+		"nock": "^13.2.1",
+		"testdouble": "^3.16.3",
+		"testdouble-chai": "^0.5.0"
+	},
+	"scripts": {
+		"test": "mocha --reporter json --reporter-options output=test-results.json",
+		"dev:test": "mocha --watch"
+	}
+}

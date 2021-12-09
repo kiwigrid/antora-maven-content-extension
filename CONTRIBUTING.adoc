@@ -1,0 +1,28 @@
+= Contributions Welcome!
+
+== What to contribute
+
+Pick a https://github.com/kiwigrid/antora-maven-content-extension/issues[ticket] or just the one feature you want to see here.
+
+== Build plugin locally
+
+To test locally, simply issue :
+
+[source,shell]
+----
+# run tests once
+npm test
+# run tests continuously
+npm run dev:test
+----
+
+== How
+
+1. Fork
+2. Develop
+3. Make sure your commits adhere to https://www.conventionalcommits.org/en/v1.0.0/[conventional commits]
+4. Issue a Pull-Request against `main`
+
+== Releasing
+
+Every merge to `main` is a release candidate, a release can be made by merging the automatically created release PRs (thanks to https://github.com/googleapis/release-please[release please]).
