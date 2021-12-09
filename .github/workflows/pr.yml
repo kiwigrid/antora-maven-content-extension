@@ -1,8 +1,10 @@
 name: PR
-on: pull_request
+on:
+  - pull_request
+  - workflow_dispatch
 jobs:
-  conventional:
-    name: Conventional PR
+  test:
+    name: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

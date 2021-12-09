@@ -1,7 +1,7 @@
 {
 	"name": "@kiwigrid/antora-maven-content",
 	"version": "1.0.0",
-	"description": "// TODO",
+	"description": "Antora 3 extension to source documentation from maven repositories.",
 	"contributors": [
 		{
 			"name": "Jörg Eichhorn",
@@ -15,6 +15,10 @@
 	"license": "MIT",
 	"type": "commonjs",
 	"main": "lib/extension.js",
+	"repository": {
+		"url": "https://github.com/kiwigrid/antora-maven-content-extension"
+	},
+	"homepage": "https://github.com/kiwigrid/antora-maven-content-extension",
 	"dependencies": {
 		"libxmljs2": "^0.29.0",
 		"node-fetch": "^2.6.6",
