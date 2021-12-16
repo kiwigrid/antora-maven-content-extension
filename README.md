@@ -21,9 +21,10 @@ Then add the extension to the playbook:
 antora:
   extensions:
     - require: "@kiwigrid/antora-maven-content"
+      mavenSettings: true             # defaults to false, true resolves to '$HOME/.m2/settings.xml' a string is taken as is
       repositories:
-        - baseUrl: maven-central      # required
-          fetchOptions:               # optional
+        - baseUrl: https://www.example.com # required
+          fetchOptions:                    # optional
             headers:
               "Authorization": "Basic <base64 encoded user:password>"
       sources:
@@ -64,6 +65,12 @@ For each picked version a corresponding playbook content source entry is created
 
 * points to a local transient cached on-demand git repository the artifact has been extracted to
 * is configured with the same [start path(s)](https://docs.antora.org/antora/3.0/playbook/content-source-start-paths/)
+
+### Maven `settings.xml`
+
+If `mavenSettings` is given a maven settings.xml is parsed for repositories and authentication data.
+The value of the option can be `true` to use `$HOME/.m2/settings.xml` or a string pointing to a settings file.
+Only active profiles are extracted. 
 
 ## Contributions
 
