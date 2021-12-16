@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/kiwigrid/antora-maven-content-extension/compare/v1.0.0...v1.1.0) (2021-12-16)
+
+
+### Features
+
+* Support maven settings.xml ([80e7299](https://www.github.com/kiwigrid/antora-maven-content-extension/commit/80e7299aed3cd71bb08a7e2130030aeb5645c1d0))
+
 ## 1.0.0 (2021-12-09)
 
 
