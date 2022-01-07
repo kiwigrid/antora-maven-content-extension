@@ -60,7 +60,7 @@ describe('antora maven content extension', function () {
 
         it('should not modify playbook if there\'s no config', async function () {
             const fakeConfig = {};
-            const playbook = {};
+            const playbook = {env: {}};
             const extension = new MavenContentSourceExtension(fakeContext, fakeConfig);
 
             await extension.onPlaybookBuilt({playbook})
@@ -84,7 +84,7 @@ describe('antora maven content extension', function () {
                     }
                 ]
             };
-            const playbook = {};
+            const playbook = {env: {}};
             const extension = new MavenContentSourceExtension(fakeContext, fakeConfig);
 
             await extension.onPlaybookBuilt({playbook})

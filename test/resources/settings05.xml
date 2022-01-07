@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<interactiveMode>false</interactiveMode>
+	<servers>
+		<server>
+			<id>company-central</id>
+			<username>user</username>
+			<password>pass</password>
+		</server>
+	</servers>
+	<mirrors>
+		<mirror>
+			<id>company-central</id>
+			<mirrorOf>central1</mirrorOf>
+			<name>The company repo.</name>
+			<url>https://repo.example.com</url>
+		</mirror>
+	</mirrors>
+	<profiles>
+		<profile>
+			<id>default1</id>
+			<repositories>
+				<repository>
+					<id>central1</id>
+					<url>http://central1</url>
+				</repository>
+			</repositories>
+		</profile>
+		<profile>
+			<id>default2</id>
+			<repositories>
+				<repository>
+					<id>central2</id>
+					<url>http://central2</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>default1</activeProfile>
+		<activeProfile>default2</activeProfile>
+	</activeProfiles>
+</settings>
