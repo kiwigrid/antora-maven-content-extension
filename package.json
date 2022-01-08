@@ -31,11 +31,12 @@
 		"chai": "*",
 		"mocha": "*",
 		"nock": "^13.2.1",
+		"nyc": "^15.1.0",
 		"testdouble": "^3.16.3",
 		"testdouble-chai": "^0.5.0"
 	},
 	"scripts": {
-		"test": "mocha --reporter json --reporter-options output=test-results.json",
+		"test": "nyc --reporter=lcov mocha --reporter json --reporter-options output=test-results.json",
 		"dev:test": "mocha --watch"
 	}
 }

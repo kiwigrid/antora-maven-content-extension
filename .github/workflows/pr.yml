@@ -9,10 +9,31 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
       - run: npm ci
       - run: npm test
       - uses: actions/upload-artifact@v2
         if: success() || failure()
         with:
           name: test-results
-          path: test-results.json
+          path: |
+            test-results.json
+            coverage/lcov.info
+  base_branch_cov:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.base_ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm ci
+      - run: npm test
+      - name: Upload code coverage for ref branch
+        uses: actions/upload-artifact@v2
+        if: success() || failure()
+        with:
+          name: ref-lcov
+          path: ./coverage/lcov.info
