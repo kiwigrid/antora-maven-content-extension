@@ -8,8 +8,9 @@ WARNING: This extension expects maven artifacts to be versioned according to [Se
 
 ## Usage
 
-Publish an artifact (`zip`, `jar` and `tgz` supported) to a maven repository.
-Make sure the archive content adheres to the [antora folder structure](https://docs.antora.org/antora/3.0/standard-directories/).
+Publish an artifact (`zip`, `jar` and `tgz` supported) to a maven repository. Make sure the archive content adheres to
+the [antora folder structure](https://docs.antora.org/antora/3.0/standard-directories/) (somewhere, since start paths
+are supported, too).
 
 Make sure it's available for antora (i.e. installed globally or along the playbook):
 
@@ -17,14 +18,15 @@ Make sure it's available for antora (i.e. installed globally or along the playbo
 npm i @kiwigrid/antora-maven-content
 ```
 Then add the extension to the playbook:
+
 ```yaml
 antora:
   extensions:
     - require: "@kiwigrid/antora-maven-content"
-      mavenSettings: true             # defaults to false, true resolves to '$HOME/.m2/settings.xml' a string is taken as is
-      repositories:
+      mavenSettings: true                  # defaults to false, true resolves to '$HOME/.m2/settings.xml' or '$M2_HOME/conf/settings.xml', a string is taken as is
+      repositories: # optional
         - baseUrl: https://www.example.com # required
-          fetchOptions:                    # optional
+          fetchOptions: # optional
             headers:
               "Authorization": "Basic <base64 encoded user:password>"
       sources:
@@ -68,9 +70,9 @@ For each picked version a corresponding playbook content source entry is created
 
 ### Maven `settings.xml`
 
-If `mavenSettings` is given a maven settings.xml is parsed for repositories and authentication data.
-The value of the option can be `true` to use `$HOME/.m2/settings.xml` or a string pointing to a settings file.
-Only active profiles are extracted. 
+If `mavenSettings` is given a maven settings.xml is parsed for repositories and authentication data. The value of the
+option can be `true` to use `$HOME/.m2/settings.xml` or a string pointing to a settings file. Only repositories of
+profiles which are active by default are extracted, mirrors are properly resolved.
 
 ## Contributions
 
