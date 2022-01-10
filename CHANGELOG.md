@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://www.github.com/kiwigrid/antora-maven-content-extension/compare/v1.2.0...v1.2.1) (2022-01-10)
+
+
+### Bug Fixes
+
+* logger has no `get` ([5dd0d95](https://www.github.com/kiwigrid/antora-maven-content-extension/commit/5dd0d95259fadaa858036df6386dc08806080ae1))
+
 ## [1.2.0](https://www.github.com/kiwigrid/antora-maven-content-extension/compare/v1.1.0...v1.2.0) (2022-01-08)
 
 
