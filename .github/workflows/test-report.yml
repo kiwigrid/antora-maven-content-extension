@@ -15,18 +15,3 @@ jobs:
           name: Mocha Tests
           path: 'test-results.json'
           reporter: mocha-json
-  check_coverage:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          # Required, workflow file name or ID
-          workflow: pr.yml
-          workflow_conclusion: completed
-          # Optional, no need to specify if PR is
-          commit: ${{github.event.pull_request.head.sha}}
-      - uses: romeovs/lcov-reporter-action@v0.3.1
-        with:
-          lcov-file: "test-results/coverage/lcov.info"
-          lcov-base: "ref-lcov/lcov.info"
