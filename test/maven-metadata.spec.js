@@ -12,8 +12,7 @@ describe('maven metadata handling', function () {
     let logger;
 
     beforeEach(function () {
-        logger = td.object(['debug', 'info', 'warn', 'get']);
-        td.when(logger.get(td.matchers.anything())).thenReturn(logger);
+        logger = td.object(['debug', 'info', 'warn']);
     })
 
     it('should find all versions', function () {

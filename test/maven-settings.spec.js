@@ -37,8 +37,7 @@ describe('maven settings repository extraction', function () {
     let logger;
 
     beforeEach(function () {
-        logger = td.object(['debug', 'info', 'warn', 'get']);
-        td.when(logger.get(td.matchers.anything())).thenReturn(logger);
+        logger = td.object(['debug', 'info', 'warn']);
     })
 
     it('should respect exact mirror match and repositories from 2 active profiles', function () {
