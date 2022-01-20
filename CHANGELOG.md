@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/kiwigrid/antora-maven-content-extension/compare/v1.2.1...v1.3.0) (2022-01-20)
+
+
+### Features
+
+* support active by default profiles in settings xml ([36987fa](https://www.github.com/kiwigrid/antora-maven-content-extension/commit/36987fade92d428525afdfc03c52d13d1261cf05))
+
 ### [1.2.1](https://www.github.com/kiwigrid/antora-maven-content-extension/compare/v1.2.0...v1.2.1) (2022-01-10)
 
 
