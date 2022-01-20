@@ -84,4 +84,13 @@ describe('maven settings repository extraction', function () {
         const repositories = settings.getActiveProfileRepositories();
         expectSingleMirroredRepo(repositories);
     });
+
+    it('should respect active by default profiles', function () {
+        const settings = new MavenSettingsFile(
+            fs.readFileSync('test/resources/settings06.xml'),
+            logger
+        )
+        const repositories = settings.getActiveProfileRepositories();
+        expectSingleMirroredRepo(repositories);
+    });
 });
