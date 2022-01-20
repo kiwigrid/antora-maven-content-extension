@@ -71,8 +71,8 @@ For each picked version a corresponding playbook content source entry is created
 ### Maven `settings.xml`
 
 If `mavenSettings` is given a maven settings.xml is parsed for repositories and authentication data. The value of the
-option can be `true` to use `$HOME/.m2/settings.xml` or a string pointing to a settings file. Only repositories of
-profiles which are active by default are extracted, mirrors are properly resolved.
+option can be `true` to use `$HOME/.m2/settings.xml` or `$M2_HOME/conf/settings.xml` or a string pointing to a settings
+file. Only repositories of profiles which are active by default are extracted, mirrors are properly resolved.
 
 ## Contributions
 

@@ -20,12 +20,13 @@
 	},
 	"homepage": "https://github.com/kiwigrid/antora-maven-content-extension",
 	"dependencies": {
-		"libxmljs2": "^0.29.0",
 		"node-fetch": "^2.6.6",
 		"semver": "^7.3.5",
 		"sha1": "^1.1.1",
 		"tar": "^6.1.11",
-		"unzip-stream": "^0.3.1"
+		"unzip-stream": "^0.3.1",
+		"fontoxpath": "^3.23.0",
+		"slimdom-sax-parser": "^1.5.1"
 	},
 	"devDependencies": {
 		"chai": "*",
