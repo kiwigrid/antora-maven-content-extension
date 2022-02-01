@@ -41,6 +41,20 @@ jobs:
     needs:
       - test
       - base_branch_cov
+    permissions:
+      issues: write
+      actions: read
+      checks: read
+      contents: read
+      deployments: read
+      discussions: read
+      id-token: read
+      packages: read
+      pages: read
+      pull-requests: read
+      repository-projects: read
+      security-events: read
+      statuses: read
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
