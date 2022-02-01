@@ -15,3 +15,9 @@ jobs:
           name: Mocha Tests
           path: 'test-results.json'
           reporter: mocha-json
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+      - uses: romeovs/lcov-reporter-action@v0.3.1
+        with:
+          lcov-file: "test-results/coverage/lcov.info"
+          lcov-base: "ref-lcov/lcov.info"
