@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.3.0...v1.3.1) (2022-02-01)
+
+
+### Miscellaneous Chores
+
+* release 1.3.1 ([f2fbc5b](https://github.com/kiwigrid/antora-maven-content-extension/commit/f2fbc5bf7597a3b6b5800a1ed05654fa0675ca92))
+
 ## [1.3.0](https://www.github.com/kiwigrid/antora-maven-content-extension/compare/v1.2.1...v1.3.0) (2022-01-20)
 
 
