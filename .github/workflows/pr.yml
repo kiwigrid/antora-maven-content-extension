@@ -48,7 +48,6 @@ jobs:
       contents: read
       deployments: read
       discussions: read
-      id-token: read
       packages: read
       pages: read
       pull-requests: read
