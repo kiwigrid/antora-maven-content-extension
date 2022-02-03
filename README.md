@@ -1,3 +1,7 @@
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/kiwigrid/antora-maven-content-extension?style=flat)](https://github.com/kiwigridantora-maven-content-extension/releases)
+[![npm (scoped)](https://img.shields.io/npm/v/@kiwigrid/antora-maven-content)](https://www.npmjs.com/package/@kiwigrid/antora-maven-content)
+[![npm](https://img.shields.io/npm/dm/@kiwigrid/antora-maven-content)](https://www.npmjs.com/package/@kiwigrid/antora-maven-content)
+
 # Antora Maven Content Source Extension
 
 This extension allows [Antora](https://docs.antora.org/antora/3.0/) to retrieve content from maven coordinates in addition to git repositories.
