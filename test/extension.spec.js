@@ -93,7 +93,5 @@ describe('antora maven content extension', function () {
             const updatedVars = expectVarUpdate();
             expect(updatedVars).to.deep.equal({playbook});
         })
-
-
     })
 });

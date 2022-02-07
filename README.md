@@ -37,6 +37,7 @@ antora:
         - groupId: "com.example"      # required
           artifactId: "antora-module" # required
           version: "1.x.x"            # defaults to '*'
+          versionScheme: "SemVer"     # defaults to 'SemVer' 
           limit: 3                    # defaults to 1
           limitBy: minor              # defaults to 'major', one of 'major', 'minor', 'patch', 'any'
           includeSnapshots: true      # defaults to false, true has no effect if includePrerelease is false as SNAPSHOTS are SemVer pre releases
@@ -45,6 +46,7 @@ antora:
           extension: "tgz"            # defaults to 'zip'
           startPath: ~                # defaults to null
           startPaths: "docs/*"        # defaults to null
+          edit_url: "https://git.example.com/repos/myRepo/browse/{path}" # defaults to false
 # ...
 ```
 
@@ -71,6 +73,15 @@ For each picked version a corresponding playbook content source entry is created
 
 * points to a local transient cached on-demand git repository the artifact has been extracted to
 * is configured with the same [start path(s)](https://docs.antora.org/antora/3.0/playbook/content-source-start-paths/)
+* is configured with an [edit url](https://docs.antora.org/antora/latest/playbook/content-edit-url/)
+
+### Supported Versioning Schemes
+
+| Scheme | Structure | version format | notes
+| ---    | ----      | ----           | ---
+| [`SemVer`](https://semver.org/) | `<major>.<minor>.<patch>+<metadata>-<prerelease>` | any valid [SemVer Range](https://www.npmjs.com/package/semver#user-content-ranges) | recommended
+| [`OSGI`](https://www.eclipse.org/virgo/documentation/virgo-documentation-3.7.0.M01/docs/virgo-user-guide/html/ch02s02.html#d0e341) | `<major>.<minor>.<micro>.<qualifier>` | any valid [OSGI range](https://www.eclipse.org/virgo/documentation/virgo-documentation-3.7.0.M01/docs/virgo-user-guide/html/ch02s02.html#d0e404) | `micro` is exposed as `patch`, there is no order between qualifiers
+| `Lexicographically` | any | any valid regular expression | `minor` and `patch` are always `0`, the complete version is the `major` part
 
 ### Maven `settings.xml`
 
