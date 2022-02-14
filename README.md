@@ -8,7 +8,7 @@ This extension allows [Antora](https://docs.antora.org/antora/3.0/) to retrieve 
 If parts of the documentation are generated or post-processed it's usually more convenient to package and publish the docs to a maven repository instead of making the build commit generated files into a git repo.
 Also, it's probably more common for Java hackers to refer to published artifacts than to git repos.
 
-WARNING: This extension expects maven artifacts to be versioned according to [SemVer](https://www.npmjs.com/package/semver)
+> This extension recommends maven artifacts to be versioned according to [SemVer](https://www.npmjs.com/package/semver)
 
 ## Usage
 
@@ -79,7 +79,7 @@ For each picked version a corresponding playbook content source entry is created
 
 | Scheme | Structure | version format | notes
 | ---    | ----      | ----           | ---
-| [`SemVer`](https://semver.org/) | `<major>.<minor>.<patch>+<metadata>-<prerelease>` | any valid [SemVer Range](https://www.npmjs.com/package/semver#user-content-ranges) | recommended
+| [`SemVer`](https://semver.org/) | `<major>.<minor>.<patch>+<metadata>-<prerelease>` | any valid [SemVer Range](https://www.npmjs.com/package/semver#ranges) | recommended
 | [`OSGI`](https://www.eclipse.org/virgo/documentation/virgo-documentation-3.7.0.M01/docs/virgo-user-guide/html/ch02s02.html#d0e341) | `<major>.<minor>.<micro>.<qualifier>` | any valid [OSGI range](https://www.eclipse.org/virgo/documentation/virgo-documentation-3.7.0.M01/docs/virgo-user-guide/html/ch02s02.html#d0e404) | `micro` is exposed as `patch`, there is no order between qualifiers
 | `Lexicographically` | any | any valid regular expression | `minor` and `patch` are always `0`, the complete version is the `major` part
 
