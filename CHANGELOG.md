@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.3.1...v1.4.0) (2022-02-14)
+
+
+### 🐛 Bug Fixes
+
+* either pass through `edit_url` or suppress it ([f4064b4](https://github.com/kiwigrid/antora-maven-content-extension/commit/f4064b44f747be9f018301cb20b504771a2f308c))
+
+
+### 🎁 Features
+
+* add alternative versioning schemes ([f4064b4](https://github.com/kiwigrid/antora-maven-content-extension/commit/f4064b44f747be9f018301cb20b504771a2f308c))
+* pass through given `edit_url` ([f4064b4](https://github.com/kiwigrid/antora-maven-content-extension/commit/f4064b44f747be9f018301cb20b504771a2f308c))
+
 ### [1.3.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.3.0...v1.3.1) (2022-02-01)
 
 
