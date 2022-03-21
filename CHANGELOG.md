@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.4.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.4.0...v1.4.1) (2022-03-21)
+
+
+### 🐛 Bug Fixes
+
+* `edit_url` is camel case internally ([93d0a83](https://github.com/kiwigrid/antora-maven-content-extension/commit/93d0a8395aad03eae1e6dd173e4a96d2ec32e901))
+* more `edit_url` camel case fixes ([b6d9fb1](https://github.com/kiwigrid/antora-maven-content-extension/commit/b6d9fb17659e75e4fbb1067903ef3d89182557c6))
+
 ## [1.4.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.3.1...v1.4.0) (2022-02-14)
 
 
