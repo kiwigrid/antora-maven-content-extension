@@ -21,7 +21,7 @@ jobs:
               {"type":"revert","section":"Reverts"},
               {"type":"docs","section":"📖 Documentation"},
               {"type":"style","section":"Styles","hidden":true},
-              {"type":"chore","section":"🧹 Miscellaneous Chores","hidden":true},
+              {"type":"chore","section":"🧹 Miscellaneous Chores","hidden":false},
               {"type":"refactor","section":"Code Refactoring","hidden":true},
               {"type":"test","section":"Tests","hidden":true},
               {"type":"build","section":"🏗️ Build System","hidden":true},
