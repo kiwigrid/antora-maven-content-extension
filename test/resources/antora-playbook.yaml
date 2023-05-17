@@ -1,0 +1,15 @@
+antora:
+  extensions:
+    - require: "."
+      repositories:
+        - baseUrl: https://maven.example.com
+      sources:
+        - groupId: "com.example"
+          artifactId: "module"
+site:
+  title: Example Site
+  start_page: test-component::index.adoc
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
