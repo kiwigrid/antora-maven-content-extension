@@ -21,7 +21,11 @@ describe('Maven Content Extension', function () {
     const antoraVersions = [
         ["3.0.1", 'antoracli-301', 'antoragen-301'],
         ["3.0.2", 'antoracli-302', 'antoragen-302'],
-        ["3.0.3", 'antoracli-303', 'antoragen-303']
+        ["3.0.3", 'antoracli-303', 'antoragen-303'],
+        ["3.1.0", 'antoracli-310', 'antoragen-310'],
+        ["3.1.1", 'antoracli-311', 'antoragen-311'],
+        ["3.1.2", 'antoracli-312', 'antoragen-312'],
+        ["3.1.3", 'antoracli-313', 'antoragen-313']
     ];
 
     let testTmpDir;

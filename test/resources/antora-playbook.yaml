@@ -6,6 +6,9 @@ antora:
       sources:
         - groupId: "com.example"
           artifactId: "module"
+runtime:
+  log:
+    level: all
 site:
   title: Example Site
   start_page: test-component::index.adoc
