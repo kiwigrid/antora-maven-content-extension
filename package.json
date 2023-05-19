@@ -28,16 +28,45 @@
 		"fontoxpath": "^3.23.0",
 		"slimdom-sax-parser": "^1.5.1"
 	},
+	"peerDependencies": {
+		"@antora/cli": "3.1.3"
+	},
 	"devDependencies": {
 		"chai": "*",
+		"chai-files": "*",
 		"mocha": "*",
-		"nock": "^13.2.1",
-		"nyc": "^15.1.0",
+		"serve-static": "*",
+		"finalhandler": "*",
+		"nyc": "*",
 		"testdouble": "^3.16.3",
-		"testdouble-chai": "^0.5.0"
+		"testdouble-chai": "^0.5.0",
+		"antoracli-301": "npm:@antora/cli@3.0.1",
+		"antoragen-301": "npm:@antora/site-generator@3.0.1",
+		"antoracli-302": "npm:@antora/cli@3.0.2",
+		"antoragen-302": "npm:@antora/site-generator@3.0.2",
+		"antoracli-303": "npm:@antora/cli@3.0.3",
+		"antoragen-303": "npm:@antora/site-generator@3.0.3",
+		"antoracli-310": "npm:@antora/cli@3.1.0",
+		"antoragen-310": "npm:@antora/site-generator@3.1.0",
+		"antoracli-311": "npm:@antora/cli@3.1.1",
+		"antoragen-311": "npm:@antora/site-generator@3.1.1",
+		"antoracli-312": "npm:@antora/cli@3.1.2",
+		"antoragen-312": "npm:@antora/site-generator@3.1.2",
+		"antoracli-313": "npm:@antora/cli@3.1.3",
+		"antoragen-313": "npm:@antora/site-generator@3.1.3"
 	},
 	"scripts": {
-		"test": "nyc --reporter=lcov mocha --reporter json --reporter-options output=test-results.json",
+		"test": "nyc mocha --reporter json --reporter-options output=test-results.json",
 		"dev:test": "mocha --watch"
+	},
+	"nyc": {
+		"reporter": ["lcov"],
+		"all": true,
+		"include": [
+			"lib/**/*.js"
+		],
+		"exclude": [
+			"**/*.spec.js"
+		]
 	}
 }
