@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.5.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.4.4...v1.5.0) (2023-05-19)
+
+
+### 🎁 Features
+
+* support antora 3.1.0-3 ([2f00e6f](https://github.com/kiwigrid/antora-maven-content-extension/commit/2f00e6f72838a6fa6e5fa5773a68c3d9b1246dde))
+
+
+### 📖 Documentation
+
+* add compatibility note and reformat tables ([bd0c965](https://github.com/kiwigrid/antora-maven-content-extension/commit/bd0c965e2666f1eed1145440e6673fdabb0fd802))
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump nock from 13.3.0 to 13.3.1 ([87489c6](https://github.com/kiwigrid/antora-maven-content-extension/commit/87489c6992f595ed538f22d71f9f1709278f436e))
+* **deps-dev:** bump testdouble from 3.17.0 to 3.17.1 ([61246d0](https://github.com/kiwigrid/antora-maven-content-extension/commit/61246d0b471d3cae4586bd038354a28d952a4aa3))
+* **deps-dev:** bump testdouble from 3.17.1 to 3.17.2 ([698b2ff](https://github.com/kiwigrid/antora-maven-content-extension/commit/698b2ffd7a80a907a008b045685813b83bb23efb))
+* **deps-dev:** bump testdouble from 3.17.2 to 3.18.0 ([e26f811](https://github.com/kiwigrid/antora-maven-content-extension/commit/e26f81198c311013d1cf065c8965f8c1cf53e040))
+* **deps:** bump fontoxpath from 3.29.0 to 3.29.1 ([1d029e7](https://github.com/kiwigrid/antora-maven-content-extension/commit/1d029e754a1c781710bc493439e7c189a8730410))
+* **deps:** bump node-fetch from 2.6.9 to 2.6.11 ([a4ff085](https://github.com/kiwigrid/antora-maven-content-extension/commit/a4ff085e19dfeabbcc53eff5f77dc58788b99a76))
+* **deps:** bump semver from 7.3.8 to 7.4.0 ([f3eace0](https://github.com/kiwigrid/antora-maven-content-extension/commit/f3eace036fe256105644f21f76dfeb36fe381c80))
+* **deps:** bump semver from 7.4.0 to 7.5.0 ([8fc2a05](https://github.com/kiwigrid/antora-maven-content-extension/commit/8fc2a0531d7a3716f39e6b03943b157805b32b89))
+* **deps:** bump semver from 7.5.0 to 7.5.1 ([1083d9a](https://github.com/kiwigrid/antora-maven-content-extension/commit/1083d9a02ad0923cafea2f28efb8ed9c5e348a63))
+* **deps:** bump tar from 6.1.13 to 6.1.14 ([86d2b6f](https://github.com/kiwigrid/antora-maven-content-extension/commit/86d2b6f82f286c2a104a703efdda52247ab2b5f3))
+* **deps:** bump tar from 6.1.14 to 6.1.15 ([d193d9c](https://github.com/kiwigrid/antora-maven-content-extension/commit/d193d9c1d85072c27044e9ce9f49bca4584e605f))
+* remove unused code ([9f537f4](https://github.com/kiwigrid/antora-maven-content-extension/commit/9f537f4afaf0f8fd69e11f79170ea509a62588f3))
+
 ## [1.4.4](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.4.3...v1.4.4) (2023-03-14)
 
 

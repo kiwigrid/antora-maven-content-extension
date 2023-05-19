@@ -1,6 +1,6 @@
 {
 	"name": "@kiwigrid/antora-maven-content",
-	"version": "1.4.4",
+	"version": "1.5.0",
 	"description": "Antora 3 extension to source documentation from maven repositories.",
 	"contributors": [
 		{
@@ -60,7 +60,9 @@
 		"dev:test": "mocha --watch"
 	},
 	"nyc": {
-		"reporter": ["lcov"],
+		"reporter": [
+			"lcov"
+		],
 		"all": true,
 		"include": [
 			"lib/**/*.js"
