@@ -35,7 +35,6 @@
 		"chai": "*",
 		"chai-files": "*",
 		"mocha": "*",
-		"nock": "^13.2.1",
 		"serve-static": "*",
 		"finalhandler": "*",
 		"nyc": "*",

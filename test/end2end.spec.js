@@ -6,8 +6,6 @@ chai.use(tdChai(td));
 const chaiFiles = require('chai-files');
 chai.use(chaiFiles);
 const file = chaiFiles.file;
-const dir = chaiFiles.dir;
-const nock = require('nock')
 const finalhandler = require('finalhandler')
 const http = require('http')
 const serveStatic = require('serve-static')
