@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.5.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.0...v1.5.1) (2023-07-10)
+
+
+### 🧹 Miscellaneous Chores
+
+* Create LICENSE ([e77d541](https://github.com/kiwigrid/antora-maven-content-extension/commit/e77d5414ae60dde48d7ae032bed2691a3d225615))
+* **deps:** bump node-fetch from 2.6.11 to 2.6.12 ([f23b48a](https://github.com/kiwigrid/antora-maven-content-extension/commit/f23b48aa6a0537d94b6aa02ff922f4295bb701b6))
+* **deps:** bump semver from 7.5.1 to 7.5.2 ([041b4d3](https://github.com/kiwigrid/antora-maven-content-extension/commit/041b4d3d8be8a8ad49a5c263ab8225642d1cec56))
+* **deps:** bump semver from 7.5.2 to 7.5.3 ([9787406](https://github.com/kiwigrid/antora-maven-content-extension/commit/97874060f0f0322cb584f34280f18c4ad617fb73))
+* **deps:** bump semver from 7.5.3 to 7.5.4 ([604f434](https://github.com/kiwigrid/antora-maven-content-extension/commit/604f434df9b76a7638d62a3520ef7d045416d9e9))
+
 ## [1.5.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.4.4...v1.5.0) (2023-05-19)
 
 
