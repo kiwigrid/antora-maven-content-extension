@@ -14,7 +14,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm test
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: success() || failure()
         with:
           name: test-results
@@ -34,7 +34,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - name: Upload code coverage for ref branch
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: success() || failure()
         with:
           name: ref-lcov
@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
       - uses: romeovs/lcov-reporter-action@v0.3.1
         with:
           lcov-file: "test-results/coverage/lcov.info"
