@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.5.4](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.3...v1.5.4) (2024-08-05)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump braces from 3.0.2 to 3.0.3 ([b0919f5](https://github.com/kiwigrid/antora-maven-content-extension/commit/b0919f59ffdc5b38d17022d973e91ea1b86e6bc2))
+* **deps-dev:** bump mocha from 10.4.0 to 10.5.2 ([a13d7cc](https://github.com/kiwigrid/antora-maven-content-extension/commit/a13d7cc3b80ff9475ec143fda558f027b4271a81))
+* **deps-dev:** bump mocha from 10.5.2 to 10.7.0 ([2003cfd](https://github.com/kiwigrid/antora-maven-content-extension/commit/2003cfd118c4de527b1869b2d07332c133ddf539))
+* **deps-dev:** bump nyc from 15.1.0 to 17.0.0 ([90c0687](https://github.com/kiwigrid/antora-maven-content-extension/commit/90c068782a0d5c491d28d2fee6f000bcf1773cbc))
+* **deps:** bump fontoxpath from 3.30.3 to 3.32.0 ([8ff607b](https://github.com/kiwigrid/antora-maven-content-extension/commit/8ff607b78289dce1e29264cbac3b21161725abe0))
+* **deps:** bump romeovs/lcov-reporter-action from 0.3.1 to 0.4.0 ([598b685](https://github.com/kiwigrid/antora-maven-content-extension/commit/598b685727b4132095e66a21810e53927a3938e5))
+* **deps:** bump semver from 7.6.1 to 7.6.2 ([a5567b0](https://github.com/kiwigrid/antora-maven-content-extension/commit/a5567b00b91a891bbd0db615f21bd774df198f59))
+* **deps:** bump semver from 7.6.2 to 7.6.3 ([5d2c349](https://github.com/kiwigrid/antora-maven-content-extension/commit/5d2c349996273c37aaf3b0647d044f9905158b1f))
+* **deps:** bump tar from 7.1.0 to 7.2.0 ([59a8a43](https://github.com/kiwigrid/antora-maven-content-extension/commit/59a8a4306f47d781bdb03de438bc446e0e91dea8))
+* **deps:** bump tar from 7.2.0 to 7.4.0 ([183ffec](https://github.com/kiwigrid/antora-maven-content-extension/commit/183ffec9abd423fdf6c9396faf4a472dcb07c5ab))
+* **deps:** bump tar from 7.4.0 to 7.4.3 ([b78b610](https://github.com/kiwigrid/antora-maven-content-extension/commit/b78b6108e7ac0cbb98d4dd85f56ac0267346b96c))
+
 ## [1.5.3](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.2...v1.5.3) (2024-05-08)
 
 
