@@ -7,26 +7,8 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v3.7
+      - uses: GoogleCloudPlatform/release-please-action@v4.1
         id: release
-        with:
-          release-type: node
-          package-name: "@kiwigrid/antora-maven-content"
-          changelog-types: |
-            [
-              {"type":"feat","section":"🎁 Features"},
-              {"type":"fix","section":"🐛 Bug Fixes"},
-              {"type":"perf","section":"🚀 Performance Improvements"},
-              {"type":"deps","section":"📦 Dependencies"},
-              {"type":"revert","section":"Reverts"},
-              {"type":"docs","section":"📖 Documentation"},
-              {"type":"style","section":"Styles","hidden":true},
-              {"type":"chore","section":"🧹 Miscellaneous Chores","hidden":false},
-              {"type":"refactor","section":"Code Refactoring","hidden":true},
-              {"type":"test","section":"Tests","hidden":true},
-              {"type":"build","section":"🏗️ Build System","hidden":true},
-              {"type":"ci","section":"Continuous Integration","hidden":true}
-            ]
       # The logic below handles the npm publication:
       - uses: actions/checkout@v4
         # these if statements ensure that a publication only occurs when
