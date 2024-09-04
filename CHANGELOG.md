@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.5.5](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.4...v1.5.5) (2024-09-04)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump finalhandler from 1.2.0 to 1.2.1 ([eabcc4e](https://github.com/kiwigrid/antora-maven-content-extension/commit/eabcc4e5da8c14c505233bd2e1fd1751ff4fd41f))
+* **deps-dev:** bump mocha from 10.7.0 to 10.7.3 ([d29e315](https://github.com/kiwigrid/antora-maven-content-extension/commit/d29e315d04d22bc20163e39b470a1d79a1358d26))
+* **deps:** bump fontoxpath from 3.32.0 to 3.33.0 ([b9bb615](https://github.com/kiwigrid/antora-maven-content-extension/commit/b9bb6151259aeb8fe711b9c2403c4640802eb62f))
+* **deps:** bump GoogleCloudPlatform/release-please-action ([4fdbe77](https://github.com/kiwigrid/antora-maven-content-extension/commit/4fdbe77eee9afbf3449da6c5fb5752ab47f2f5a0))
+
 ## [1.5.4](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.3...v1.5.4) (2024-08-05)
 
 
