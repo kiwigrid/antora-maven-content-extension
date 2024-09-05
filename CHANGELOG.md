@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.6.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.5...v1.6.0) (2024-09-05)
+
+
+### 🎁 Features
+
+* support environment variable references in maven settings server credentials ([4dfb699](https://github.com/kiwigrid/antora-maven-content-extension/commit/4dfb699d3a26d18c6e1ff3112c9a3ac4c72ec4b7)), closes [#130](https://github.com/kiwigrid/antora-maven-content-extension/issues/130)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump chai from 4.3.10 to 5.1.1 ([39a449f](https://github.com/kiwigrid/antora-maven-content-extension/commit/39a449f62bad406b348ef2940926c9dc34e1fef5))
+* **deps-dev:** bump finalhandler from 1.2.1 to 1.3.0 ([8745e3d](https://github.com/kiwigrid/antora-maven-content-extension/commit/8745e3dd937811748be205f00a38d382afaa26e9))
+
 ## [1.5.5](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.4...v1.5.5) (2024-09-04)
 
 
