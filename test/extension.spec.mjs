@@ -1,23 +1,18 @@
-const chai = require('chai');
-const expect = chai.expect
-global.td = require('testdouble')
-const tdChai = require('testdouble-chai');
-chai.use(tdChai(td));
+import { expect, use } from 'chai';
+import * as td from 'testdouble';
+import tdChai  from 'testdouble-chai';
+use(tdChai(td));
 
 let MavenContentSourceExtension, mavenTypes, MavenClient, MavenContentSource, ContentSourceFactory;
 
 describe('antora maven content extension', function () {
 
-    beforeEach(function () {
+    beforeEach(async function () {
         mavenTypes = td.replace('../lib/maven-types')
         MavenClient = td.replace('../lib/maven-client')
         MavenContentSource = td.replace('../lib/maven-content-source', td.constructor(['toString', 'addAsSourceToPlaybook']))
-        MavenContentSource.prototype.toString = () => {
-            return "testdouble";
-        }
         ContentSourceFactory = td.replace('../lib/content-source-factory')
-
-        MavenContentSourceExtension = require('../lib/extension')
+        MavenContentSourceExtension = (await import('../lib/extension.js')).default
     })
 
     afterEach(function () {
@@ -89,7 +84,7 @@ describe('antora maven content extension', function () {
 
             await extension.onPlaybookBuilt({playbook})
 
-            expect(ContentSourceFactory.prototype.produceContentSourcesIntoPlaybook).to.have.been.called;
+            expect(extension.contentSourceFactory.produceContentSourcesIntoPlaybook).to.have.been.called;
             const updatedVars = expectVarUpdate();
             expect(updatedVars).to.deep.equal({playbook});
         })

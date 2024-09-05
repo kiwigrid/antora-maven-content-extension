@@ -1,11 +1,10 @@
-const chai = require('chai');
-const expect = chai.expect
-global.td = require('testdouble')
-const tdChai = require('testdouble-chai');
-chai.use(tdChai(td));
-const fs = require("fs")
+import { expect, use } from 'chai';
+import * as td from 'testdouble';
+import tdChai  from 'testdouble-chai';
+use(tdChai(td));
+import fs from "fs";
 
-const {MavenMetaDataFile} = require("../lib/maven-files");
+import { MavenMetaDataFile } from "../lib/maven-files.js";
 
 describe('maven metadata handling', function () {
 

@@ -1,11 +1,10 @@
-const chai = require('chai');
-const expect = chai.expect
-global.td = require('testdouble')
-const tdChai = require('testdouble-chai');
-chai.use(tdChai(td));
+import { expect, use } from 'chai';
+import * as td from 'testdouble';
+import tdChai  from 'testdouble-chai';
+use(tdChai(td));
 
-const selectVersion = require('../lib/version-selector')
-const versioning = require('../lib/versioning')
+import selectVersion from '../lib/version-selector.js'
+import * as versioning from '../lib/versioning.js'
 
 function createVersionRepoList(scheme, ...versions) {
     // version selector expects descending order
