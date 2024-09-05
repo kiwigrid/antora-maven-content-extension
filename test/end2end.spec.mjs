@@ -1,19 +1,18 @@
-const chai = require('chai');
-const expect = chai.expect
-global.td = require('testdouble')
-const tdChai = require('testdouble-chai');
-chai.use(tdChai(td));
-const chaiFiles = require('chai-files');
-chai.use(chaiFiles);
+import { expect, use } from 'chai';
+import * as td from 'testdouble';
+import tdChai  from 'testdouble-chai';
+use(tdChai(td));
+import chaiFiles from 'chai-files';
+use(chaiFiles);
 const file = chaiFiles.file;
-const finalhandler = require('finalhandler')
-const http = require('http')
-const serveStatic = require('serve-static')
+import finalhandler from 'finalhandler';
+import http from 'http'
+import serveStatic from 'serve-static';
 
-const {mkdtemp} = require('fs/promises');
-const {join} = require('path');
-const {tmpdir} = require('os');
-const { spawn } = require('child_process')
+import { mkdtemp } from 'fs/promises';
+import { join } from 'path';
+import { tmpdir } from 'os';
+import { spawn } from 'child_process'
 
 
 describe('Maven Content Extension', function () {

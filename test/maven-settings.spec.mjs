@@ -1,12 +1,11 @@
-const chai = require('chai');
-const expect = chai.expect
-global.td = require('testdouble')
-const tdChai = require('testdouble-chai');
-chai.use(tdChai(td));
-const fs = require("fs")
+import { expect, use } from 'chai';
+import * as td from 'testdouble';
+import tdChai  from 'testdouble-chai';
+use(tdChai(td));
+import fs from "fs";
 
-const {MavenSettingsFile} = require("../lib/maven-files");
-const {MavenRepository} = require("../lib/maven-types");
+import { MavenSettingsFile }  from "../lib/maven-files.js";
+import { MavenRepository } from "../lib/maven-types.js";
 
 const USER_PASS_BASIC_AUTH_HEADERS = {
     Authorization: 'Basic ' + Buffer.from('user:pass', 'utf-8').toString('base64')
