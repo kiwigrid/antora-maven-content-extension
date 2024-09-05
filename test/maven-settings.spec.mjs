@@ -41,7 +41,7 @@ describe('maven settings repository extraction', function () {
 
     it('should respect exact mirror match and repositories from 2 active profiles', function () {
         const settings = new MavenSettingsFile(
-            fs.readFileSync('test/resources/settings05.xml'),
+            fs.readFileSync('test/resources/settings_with_exact_mirror_match_and_repositories_from_2_active_profiles.xml'),
             logger
         )
         const repositories = settings.getActiveProfileRepositories();
@@ -50,7 +50,7 @@ describe('maven settings repository extraction', function () {
 
     it('should respect exact exclusion mirror and repositories from 2 active profiles', function () {
         const settings = new MavenSettingsFile(
-            fs.readFileSync('test/resources/settings04.xml'),
+            fs.readFileSync('test/resources/settings_with_exact_exclusion_mirror_and_repositories_from_2_active_profiles.xml'),
             logger
         )
         const repositories = settings.getActiveProfileRepositories();
@@ -59,7 +59,7 @@ describe('maven settings repository extraction', function () {
 
     it('should respect single wildcard mirror and 2 repositories from 1 active profiles', function () {
         const settings = new MavenSettingsFile(
-            fs.readFileSync('test/resources/settings01.xml'),
+            fs.readFileSync('test/resources/settings_with_single_wildcard_mirror_and_2_repositories_from_1_active_profiles.xml'),
             logger
         )
         const repositories = settings.getActiveProfileRepositories();
@@ -68,7 +68,7 @@ describe('maven settings repository extraction', function () {
 
     it('should respect single wildcard mirror and repository from 1 active profile', function () {
         const settings = new MavenSettingsFile(
-            fs.readFileSync('test/resources/settings02.xml'),
+            fs.readFileSync('test/resources/settings_with_single_wildcard_mirror_and_repository_from_1_active_profile.xml'),
             logger
         )
         const repositories = settings.getActiveProfileRepositories();
@@ -77,7 +77,7 @@ describe('maven settings repository extraction', function () {
 
     it('should respect single wildcard mirror and repositories from 2 active profiles', function () {
         const settings = new MavenSettingsFile(
-            fs.readFileSync('test/resources/settings03.xml'),
+            fs.readFileSync('test/resources/settings_with_single_wildcard_mirror_and_repositories_from_2_active_profiles.xml'),
             logger
         )
         const repositories = settings.getActiveProfileRepositories();
@@ -86,7 +86,18 @@ describe('maven settings repository extraction', function () {
 
     it('should respect active by default profiles', function () {
         const settings = new MavenSettingsFile(
-            fs.readFileSync('test/resources/settings06.xml'),
+            fs.readFileSync('test/resources/settings_with_active_by_default_profiles.xml'),
+            logger
+        )
+        const repositories = settings.getActiveProfileRepositories();
+        expectSingleMirroredRepo(repositories);
+    });
+
+    it('should resolve environment variables for username and password', function () {
+        process.env.MAVEN_USER = "user";
+        process.env.MAVEN_PASS = "pass";
+        const settings = new MavenSettingsFile(
+            fs.readFileSync('test/resources/settings_with_single_active_profile_and_repo_with_env_vars_in_server_credentials.xml'),
             logger
         )
         const repositories = settings.getActiveProfileRepositories();
