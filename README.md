@@ -10,7 +10,7 @@ Also, it's probably more common for Java hackers to refer to published artifacts
 
 > This extension recommends maven artifacts to be versioned according to [SemVer](https://www.npmjs.com/package/semver)
 
-The extension has been tested with Antora `3.0.1` up to `3.1.7`.
+The extension has been tested with Antora `3.0.1` up to `3.1.9`.
 
 ## Usage
 
@@ -31,7 +31,7 @@ antora:
     - require: "@kiwigrid/antora-maven-content"
       mavenSettings: true                  # defaults to false, true resolves to '$HOME/.m2/settings.xml' or '$M2_HOME/conf/settings.xml', a string is taken as is
       repositories: # optional
-        - baseUrl: https://www.example.com # required
+        - baseUrl: https://www.example.com # required for a repo
           fetchOptions: # optional
             headers:
               "Authorization": "Basic <base64 encoded user:password>"
@@ -40,7 +40,7 @@ antora:
           artifactId: "antora-module" # required
           version: "1.x.x"            # defaults to '*'
           versionScheme: "SemVer"     # defaults to 'SemVer' 
-          limit: 3                    # defaults to 1
+          limit: 4                    # defaults to 1
           limitBy: minor              # defaults to 'major', one of 'major', 'minor', 'patch', 'any'
           includeSnapshots: true      # defaults to false, true has no effect if includePrerelease is false as SNAPSHOTS are SemVer pre releases
           includePrerelease: true     # defaults to true
@@ -57,25 +57,28 @@ With above example configuration the extension is going to download all availabl
 * match the [SemVer Range](https://www.npmjs.com/package/semver#user-content-ranges) `1.x.x`
 * do not equal an already picked version when reduced to the `minor` version
 * for example:
+    
+    | Available Versions | Decision                                   |
+    |--------------------|--------------------------------------------|
+    | 2.0.0              | ✖ does not match 1.x.x                     |
+    | 1.2.1              | ✅                                          |
+    | 1.2.0              | ✖ equals 1.2.1 when reduced to minor (1.2) |
+    | 1.1.0              | ✅                                          |
+    | 1.0.2              | ✅                                          |
+    | 1.0.1              | ✖ equals 1.0.2 when reduced to minor (1.0) |
+    | 1.0.0              | ✖ equals 1.0.2 when reduced to minor (1.0) |
+    | 0.9.2              | ✖ does not match 1.x.x                     |
+    | 0.9.1              | ✖ does not match 1.x.x                     |
+    | 0.9.0              | ✖ does not match 1.x.x                     |
 
-    | Available Versions | Picked Versions |
-    |--------------------|-----------------|
-    | 0.9.0              | 1.0.2           |
-    | 0.9.1              | 1.1.0           |
-    | 0.9.2              | 1.2.1           |
-    | 1.0.0              |                 |
-    | 1.0.1              |                 |
-    | 1.0.2              |                 |
-    | 1.1.0              |                 |
-    | 1.2.0              |                 |
-    | 1.2.1              |                 |
-    | 2.0.0              |                 |
-
+So the configuration basically picks the most recent patch versions of the four highest minor releases of major version 1.
 For each picked version a corresponding playbook content source entry is created which:
 
 * points to a local transient cached on-demand git repository the artifact has been extracted to
 * is configured with the same [start path(s)](https://docs.antora.org/antora/3.0/playbook/content-source-start-paths/)
 * is configured with an [edit url](https://docs.antora.org/antora/latest/playbook/content-edit-url/)
+
+Note the Antora component version is totally unrelated to the maven artifact version and will be read by Antora from the component descriptor file `antora.yml` contained in the artifact archive.
 
 ### Supported Versioning Schemes
 
