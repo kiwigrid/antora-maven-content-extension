@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.6.0...v1.6.1) (2024-09-12)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump finalhandler from 1.3.0 to 1.3.1 ([5978b90](https://github.com/kiwigrid/antora-maven-content-extension/commit/5978b90d2c3838714f11f4da038d03fba9bb18e9))
+* **deps-dev:** bump serve-static from 1.15.0 to 1.16.2 ([67193a9](https://github.com/kiwigrid/antora-maven-content-extension/commit/67193a9fb354e1ad5108fd32ad217daf2f8d2104))
+
 ## [1.6.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.5...v1.6.0) (2024-09-05)
 
 
