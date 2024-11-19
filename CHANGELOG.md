@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.6.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.6.0...v1.6.1) (2024-11-19)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump chai from 5.1.1 to 5.1.2 ([50b476c](https://github.com/kiwigrid/antora-maven-content-extension/commit/50b476c0d5e07ede402aafa1a33937fa38066d18))
+* **deps-dev:** bump finalhandler from 1.3.0 to 1.3.1 ([5978b90](https://github.com/kiwigrid/antora-maven-content-extension/commit/5978b90d2c3838714f11f4da038d03fba9bb18e9))
+* **deps-dev:** bump mocha from 10.7.3 to 10.8.1 ([f7e8ede](https://github.com/kiwigrid/antora-maven-content-extension/commit/f7e8ede9b2b84dbc8eae5047a86fd95ba3f89a3b))
+* **deps-dev:** bump mocha from 10.8.1 to 10.8.2 ([b512365](https://github.com/kiwigrid/antora-maven-content-extension/commit/b512365471aaa8aacad26284376af7b73956f4c3))
+* **deps-dev:** bump nyc from 17.0.0 to 17.1.0 ([f890afb](https://github.com/kiwigrid/antora-maven-content-extension/commit/f890afb6ad51bdd8307f59578d9e32b419eade25))
+* **deps-dev:** bump serve-static from 1.15.0 to 1.16.2 ([67193a9](https://github.com/kiwigrid/antora-maven-content-extension/commit/67193a9fb354e1ad5108fd32ad217daf2f8d2104))
+* **deps:** bump cross-spawn from 7.0.3 to 7.0.6 ([97e0e7b](https://github.com/kiwigrid/antora-maven-content-extension/commit/97e0e7b95a3019387a0b7166d7d03fb08b90e8d6))
+
 ## [1.6.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.5.5...v1.6.0) (2024-09-05)
 
 
