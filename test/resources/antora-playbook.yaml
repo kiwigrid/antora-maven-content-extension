@@ -1,6 +1,6 @@
 antora:
   extensions:
-    - require: "."
+    - require: "@kiwigrid/antora-maven-content"
       repositories:
         - baseUrl: http://localhost:8991/
       sources:
@@ -10,6 +10,7 @@ antora:
 runtime:
   log:
     level: all
+    format: pretty
 site:
   title: Example Site
   start_page: test-component::index.adoc
