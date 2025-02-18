@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.2](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.6.1...v1.6.2) (2025-02-18)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump chai from 5.1.2 to 5.2.0 ([31db90b](https://github.com/kiwigrid/antora-maven-content-extension/commit/31db90b5744643abee03a700074be92f0d49073e))
+* **deps-dev:** bump mocha from 10.8.2 to 11.0.1 ([8273c60](https://github.com/kiwigrid/antora-maven-content-extension/commit/8273c60cabf3421fc20134ab37745cabac62530f))
+* **deps:** bump semver from 7.6.3 to 7.7.0 ([abec900](https://github.com/kiwigrid/antora-maven-content-extension/commit/abec900f1d349042299a2a4dbab41c83ddf2729a))
+* **deps:** bump semver from 7.7.0 to 7.7.1 ([9e1d50c](https://github.com/kiwigrid/antora-maven-content-extension/commit/9e1d50c9175b6d77a35b9c528ec7ae87b22330ad))
+
 ## [1.6.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.6.0...v1.6.1) (2024-11-19)
 
 
