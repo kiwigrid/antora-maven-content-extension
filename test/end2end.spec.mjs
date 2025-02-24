@@ -6,11 +6,12 @@ import finalhandler from 'finalhandler';
 import http from 'http'
 import serveStatic from 'serve-static';
 
-import {mkdtemp, writeFile} from 'fs/promises';
+import {mkdtemp, writeFile, copyFile, mkdir} from 'fs/promises';
 import {join} from 'path';
 import {tmpdir} from 'os';
 import {spawn} from 'child_process'
 import packageJson from '../package.json' with { type: "json" };
+import {GenericContainerBuilder, Wait} from "testcontainers";
 
 use(tdChai(td));
 use(chaiFiles);
@@ -66,6 +67,7 @@ describe('Maven Content Extension', function () {
     let cacheDir;
     let siteDir;
     let mavenRepo;
+    let antoraContainer;
 
     before(async function () {
         const tmpDir = await mkdtemp(join(tmpdir(), 'antora-mvn-content-pack'));
@@ -99,44 +101,34 @@ describe('Maven Content Extension', function () {
         await new Promise((resolve, reject) => {
             mavenRepo.close(e => e ? reject(e) : resolve());
         });
+        await antoraContainer.stop();
     });
 
     antoraVersions.forEach((version) => {
         it(`works with antora ${version}`, async function () {
-            this.timeout(20000)
-            const testPackageJson = new Uint8Array(Buffer. from(`
-            {
-              "name": "@kiwigrid/antora-maven-content-test-project",
-              "version": "1.0.0",
-              "dependencies": {
-                "@antora/cli": "${version}",
-                "@antora/site-generator": "${version}",
-                "@kiwigrid/antora-maven-content": "file:${extensionTarball}"
-              }
-            }
-            `));
-            await writeFile(`${testTmpDir}/package.json`, testPackageJson);
-            await observeAndLogStreams(spawn(
-                'npm',
-                ['install'],
-                {
-                    cwd: testTmpDir,
-                }
-            ), `npm install`);
-            await observeAndLogStreams(spawn(
-                'npx',
-                [
-                    'antora',
-                    '--stacktrace',
-                    'generate',
-                    `--cache-dir=${cacheDir}`,
-                    `--to-dir=${siteDir}`,
-                    `${extensionProjectDir}/test/resources/antora-playbook.yaml`
-                ],
-                {
-                    cwd: testTmpDir,
-                }
-            ), `antora ${version}`);
+            this.timeout(200000)
+            const testDockerFile = new Uint8Array(Buffer.from(`
+FROM antora/antora:${version}
+COPY ${packFileName} /
+RUN yarn global add --ignore-engines /${packFileName}`));
+            await writeFile(`${testTmpDir}/Dockerfile`, testDockerFile);
+            await copyFile(extensionTarball, `${testTmpDir}/${packFileName}`);
+            await mkdir(`${testTmpDir}/build`);
+            const container = await new GenericContainerBuilder(testTmpDir, "Dockerfile").build()
+            antoraContainer = await container
+                .withBindMounts([
+                    { source: `${process.cwd()}/test/resources/antora-playbook.yaml`, target: "/antora-playbook.yaml", mode: "ro"},
+                    { source: `${testTmpDir}`, target: "/antora", mode: "Z"}
+                ])
+                .withLogConsumer(stream => {
+                    stream.on("data", line => console.log(line));
+                    stream.on("err", line => console.error(line));
+                    stream.on("end", () => console.log(`Antora ${version} container log stream closed`));
+                })
+                .withNetworkMode("host")
+                .withCommand(["--cache-dir=/antora/.cache/antora", "--to-dir=/antora/site", "/antora-playbook.yaml"])
+                .withWaitStrategy(Wait.forOneShotStartup())
+                .start();
 
             expect(file(join(siteDir, 'index.html'))).to.exist;
             expect(file(join(siteDir, 'test-component', 'index.html'))).to.exist;
