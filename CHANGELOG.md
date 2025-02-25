@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.0...v1.7.1) (2025-02-25)
+
+
+### 🐛 Bug Fixes
+
+* use proper child logger per content source artifact ([7a5917a](https://github.com/kiwigrid/antora-maven-content-extension/commit/7a5917a7fd87c502524da58048394118eb85a243))
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump mocha from 11.0.1 to 11.1.0 ([bee5e44](https://github.com/kiwigrid/antora-maven-content-extension/commit/bee5e44ab51308d75215c454c79f91145d65913d))
+
 ## [1.7.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.6.1...v1.7.0) (2025-02-24)
 
 
