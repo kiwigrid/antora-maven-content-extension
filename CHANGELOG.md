@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.1...v1.7.2) (2025-02-27)
+
+
+### 🐛 Bug Fixes
+
+* replace child logger by structured log entry ([1e375fd](https://github.com/kiwigrid/antora-maven-content-extension/commit/1e375fd7a9b66c54c8142dd7733d619c7c488a7c))
+
 ## [1.7.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.0...v1.7.1) (2025-02-25)
 
 
