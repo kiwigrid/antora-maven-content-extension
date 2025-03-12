@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.3](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.2...v1.7.3) (2025-03-12)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump fontoxpath from 3.33.0 to 3.33.1 ([5aeae50](https://github.com/kiwigrid/antora-maven-content-extension/commit/5aeae50b0069f1410060d50eb3311ac013db49e8))
+* **deps:** bump fontoxpath from 3.33.0 to 3.33.1 ([38cb8b8](https://github.com/kiwigrid/antora-maven-content-extension/commit/38cb8b8cc32fac386b0360fd8f35fcf7966e57b0))
+
 ## [1.7.2](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.1...v1.7.2) (2025-02-27)
 
 
