@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.4](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.3...v1.7.4) (2025-05-12)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump GoogleCloudPlatform/release-please-action ([4a0b1d1](https://github.com/kiwigrid/antora-maven-content-extension/commit/4a0b1d12b8aeb45a322b780f71cd78062a8749c8))
+* **deps:** bump GoogleCloudPlatform/release-please-action from 4.1 to 4.2 ([593b40a](https://github.com/kiwigrid/antora-maven-content-extension/commit/593b40ae6f85a04d9b52e14d200707e062717993))
+
 ## [1.7.3](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.2...v1.7.3) (2025-05-12)
 
 
