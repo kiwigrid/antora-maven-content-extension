@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.7.3](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.2...v1.7.3) (2025-05-12)
+
+
+### 🐛 Bug Fixes
+
+* pre releases can be excluded properly ([34589dd](https://github.com/kiwigrid/antora-maven-content-extension/commit/34589dd8c6ca1ddccf0b7581a88a96af840a08a4))
+* pre releases can be excluded properly ([1e6a4e0](https://github.com/kiwigrid/antora-maven-content-extension/commit/1e6a4e0697304d18c041efd4caa7ac38bfae5dbf))
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump mocha from 11.1.0 to 11.2.2 ([d730e0b](https://github.com/kiwigrid/antora-maven-content-extension/commit/d730e0bf75ac41569323d674fa03990f796c5412))
+* **deps-dev:** bump mocha from 11.1.0 to 11.2.2 ([658aa50](https://github.com/kiwigrid/antora-maven-content-extension/commit/658aa50c6dc777874d72d157cb0b934cd4d68baf))
+* **deps-dev:** bump serve-static from 1.16.2 to 2.2.0 ([c554ccf](https://github.com/kiwigrid/antora-maven-content-extension/commit/c554ccfd5a64e7b81ef6fa7f99847611e5368c31))
+* **deps-dev:** bump serve-static from 1.16.2 to 2.2.0 ([cf88978](https://github.com/kiwigrid/antora-maven-content-extension/commit/cf88978338c56177342fafede8fa2479750415c5))
+* **deps:** bump fontoxpath from 3.33.0 to 3.33.1 ([5aeae50](https://github.com/kiwigrid/antora-maven-content-extension/commit/5aeae50b0069f1410060d50eb3311ac013db49e8))
+* **deps:** bump fontoxpath from 3.33.0 to 3.33.1 ([38cb8b8](https://github.com/kiwigrid/antora-maven-content-extension/commit/38cb8b8cc32fac386b0360fd8f35fcf7966e57b0))
+* **deps:** bump fontoxpath from 3.33.1 to 3.33.2 ([a57ae60](https://github.com/kiwigrid/antora-maven-content-extension/commit/a57ae60a80576e2727796b8322c5c49c6d3967db))
+* **deps:** bump fontoxpath from 3.33.1 to 3.33.2 ([61206e6](https://github.com/kiwigrid/antora-maven-content-extension/commit/61206e65730714c74a01f9de868b798b73bb09ca))
+
 ## [1.7.2](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.1...v1.7.2) (2025-02-27)
 
 
