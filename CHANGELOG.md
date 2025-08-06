@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.7.4](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.3...v1.7.4) (2025-08-06)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump chai from 5.2.0 to 5.2.1 ([cdea8d1](https://github.com/kiwigrid/antora-maven-content-extension/commit/cdea8d16354cc70dd71a966c9c7f2d008b82de50))
+* **deps-dev:** bump chai from 5.2.0 to 5.2.1 ([303f4fd](https://github.com/kiwigrid/antora-maven-content-extension/commit/303f4fdb967f948def141030ec74a0fdd560c707))
+* **deps-dev:** bump finalhandler from 1.3.1 to 2.1.0 ([9ac485b](https://github.com/kiwigrid/antora-maven-content-extension/commit/9ac485b1e7db857f09d8d0e415de573cd123a4df))
+* **deps-dev:** bump finalhandler from 1.3.1 to 2.1.0 ([bbd3fd9](https://github.com/kiwigrid/antora-maven-content-extension/commit/bbd3fd9a54e7c46dca6618666df36c6a629f0fe4))
+* **deps-dev:** bump mocha from 11.2.2 to 11.3.0 ([7a3587d](https://github.com/kiwigrid/antora-maven-content-extension/commit/7a3587defacf7087596e0dbee5b9c9d30bb9596c))
+* **deps-dev:** bump mocha from 11.2.2 to 11.3.0 ([1538889](https://github.com/kiwigrid/antora-maven-content-extension/commit/15388896a142b33ec969440c5ff69d7f9124f837))
+* **deps-dev:** bump mocha from 11.3.0 to 11.4.0 ([014b873](https://github.com/kiwigrid/antora-maven-content-extension/commit/014b873a72d73f13062383c73dc7a47752f4d178))
+* **deps-dev:** bump mocha from 11.3.0 to 11.4.0 ([d6a4eb1](https://github.com/kiwigrid/antora-maven-content-extension/commit/d6a4eb1732bb71d20c80e64833a02abd7a5ec83d))
+* **deps-dev:** bump mocha from 11.4.0 to 11.7.0 ([6112383](https://github.com/kiwigrid/antora-maven-content-extension/commit/6112383705578830df6710a08047cf6c759c92cc))
+* **deps-dev:** bump mocha from 11.4.0 to 11.7.0 ([332882c](https://github.com/kiwigrid/antora-maven-content-extension/commit/332882c2f516b7baf59bf0c8306be239bac8e5df))
+* **deps-dev:** bump mocha from 11.7.0 to 11.7.1 ([65742bb](https://github.com/kiwigrid/antora-maven-content-extension/commit/65742bbec0d5b6260fdad02e9999ebc7a8ccbdf8))
+* **deps-dev:** bump mocha from 11.7.0 to 11.7.1 ([eab0c9d](https://github.com/kiwigrid/antora-maven-content-extension/commit/eab0c9d328d82788f392fea68606f7a97cc94c45))
+* **deps-dev:** bump undici from 5.28.5 to 5.29.0 ([ed91e2a](https://github.com/kiwigrid/antora-maven-content-extension/commit/ed91e2ab770c6c0eb4a0a1b9d472df8343b68b2a))
+* **deps-dev:** bump undici from 5.28.5 to 5.29.0 ([640fb50](https://github.com/kiwigrid/antora-maven-content-extension/commit/640fb50209efe9b8afe1613ddb935b026474b35b))
+* **deps:** bump actions/download-artifact from 4 to 5 ([3e9ff8c](https://github.com/kiwigrid/antora-maven-content-extension/commit/3e9ff8c8d151c51a9d4a25c8f662b0467ac8822b))
+* **deps:** bump actions/download-artifact from 4 to 5 ([f61ce6e](https://github.com/kiwigrid/antora-maven-content-extension/commit/f61ce6e4bf8c7056ab017cb53efe934420a06a75))
+* **deps:** bump dorny/test-reporter from 1 to 2 ([3c5f2aa](https://github.com/kiwigrid/antora-maven-content-extension/commit/3c5f2aa868ebfd73f55974dd209ccd9ee08ad9e5))
+* **deps:** bump dorny/test-reporter from 1 to 2 ([9984b58](https://github.com/kiwigrid/antora-maven-content-extension/commit/9984b5887d01f7b7fdf1340be38aab6361797ea5))
+* **deps:** bump GoogleCloudPlatform/release-please-action ([4a0b1d1](https://github.com/kiwigrid/antora-maven-content-extension/commit/4a0b1d12b8aeb45a322b780f71cd78062a8749c8))
+* **deps:** bump GoogleCloudPlatform/release-please-action from 4.1 to 4.2 ([593b40a](https://github.com/kiwigrid/antora-maven-content-extension/commit/593b40ae6f85a04d9b52e14d200707e062717993))
+* **deps:** bump semver from 7.7.1 to 7.7.2 ([3840ded](https://github.com/kiwigrid/antora-maven-content-extension/commit/3840ded473006add57925dc47cd64b338d435d85))
+* **deps:** bump semver from 7.7.1 to 7.7.2 ([6c5642b](https://github.com/kiwigrid/antora-maven-content-extension/commit/6c5642b55dd6d12193bf90331220669b7b9d44c0))
+
 ## [1.7.3](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.2...v1.7.3) (2025-05-12)
 
 
