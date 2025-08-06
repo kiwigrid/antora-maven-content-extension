@@ -30,7 +30,8 @@ describe('Maven Content Extension', function () {
         ["3.1.6", 'antoracli-316', 'antoragen-316'],
         ["3.1.7", 'antoracli-317', 'antoragen-317'],
         ["3.1.8", 'antoracli-318', 'antoragen-318'],
-        ["3.1.9", 'antoracli-319', 'antoragen-319']
+        ["3.1.9", 'antoracli-319', 'antoragen-319'],
+        ["3.1.10", 'antoracli-3110', 'antoragen-3110']
     ];
 
     let testTmpDir;
@@ -62,7 +63,7 @@ describe('Maven Content Extension', function () {
     });
 
     antoraVersions.forEach(([name, antoraModule, generatorModule]) => {
-        it(`works with antora ${name}`, async function () {
+        it(`works with antora package ${name}`, async function () {
             this.timeout(10000)
 
             const antoraProcess = spawn(

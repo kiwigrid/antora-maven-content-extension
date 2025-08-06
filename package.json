@@ -29,9 +29,6 @@
 		"tar": "^7.0.0",
 		"unzip-stream": "^0.3.1"
 	},
-	"peerDependencies": {
-		"@antora/cli": "3.1.3"
-	},
 	"devDependencies": {
 		"antoracli-301": "npm:@antora/cli@3.0.1",
 		"antoracli-302": "npm:@antora/cli@3.0.2",
@@ -46,6 +43,7 @@
 		"antoracli-317": "npm:@antora/cli@3.1.7",
 		"antoracli-318": "npm:@antora/cli@3.1.8",
 		"antoracli-319": "npm:@antora/cli@3.1.9",
+		"antoracli-3110": "npm:@antora/cli@3.1.10",
 		"antoragen-301": "npm:@antora/site-generator@3.0.1",
 		"antoragen-302": "npm:@antora/site-generator@3.0.2",
 		"antoragen-303": "npm:@antora/site-generator@3.0.3",
@@ -59,6 +57,7 @@
 		"antoragen-317": "npm:@antora/site-generator@3.1.7",
 		"antoragen-318": "npm:@antora/site-generator@3.1.8",
 		"antoragen-319": "npm:@antora/site-generator@3.1.9",
+		"antoragen-3110": "npm:@antora/site-generator@3.1.10",
 		"chai": "*",
 		"chai-files": "*",
 		"finalhandler": "*",
@@ -66,7 +65,8 @@
 		"nyc": "*",
 		"serve-static": "*",
 		"testdouble": "^3.16.3",
-		"testdouble-chai": "^0.5.0"
+		"testdouble-chai": "^0.5.0",
+		"testcontainers": "^10.18.0"
 	},
 	"scripts": {
 		"test": "nyc mocha --reporter json --reporter-options output=test-results.json",
