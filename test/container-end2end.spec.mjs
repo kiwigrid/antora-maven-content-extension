@@ -59,7 +59,6 @@ describe('Maven Content Extension', function () {
         "3.1.10",
     ];
 
-    const extensionProjectDir = process.cwd();
     const packFileName = `kiwigrid-antora-maven-content-${packageJson.version}.tgz`
 
     let extensionTarball;
@@ -105,7 +104,7 @@ describe('Maven Content Extension', function () {
     });
 
     antoraVersions.forEach((version) => {
-        it(`works with antora ${version}`, async function () {
+        it(`works with antora container ${version}`, async function () {
             this.timeout(200000)
             const testDockerFile = new Uint8Array(Buffer.from(`
 FROM antora/antora:${version}
@@ -117,7 +116,7 @@ RUN yarn global add --ignore-engines /${packFileName}`));
             const container = await new GenericContainerBuilder(testTmpDir, "Dockerfile").build()
             antoraContainer = await container
                 .withBindMounts([
-                    { source: `${process.cwd()}/test/resources/antora-playbook.yaml`, target: "/antora-playbook.yaml", mode: "ro"},
+                    { source: `${process.cwd()}/test/resources/antora-playbook.container.yaml`, target: "/antora-playbook.yaml", mode: "ro"},
                     { source: `${testTmpDir}`, target: "/antora", mode: "Z"}
                 ])
                 .withLogConsumer(stream => {

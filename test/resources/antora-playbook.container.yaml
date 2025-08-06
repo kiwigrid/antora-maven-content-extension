@@ -1,12 +1,11 @@
 antora:
   extensions:
-    - require: "."
+    - require: "@kiwigrid/antora-maven-content"
       repositories:
         - baseUrl: http://localhost:8991
       sources:
         - groupId: "com.example"
           artifactId: "module"
-          includePrerelease: false
 runtime:
   log:
     level: all
