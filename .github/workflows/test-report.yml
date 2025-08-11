@@ -23,3 +23,4 @@ jobs:
           name: Mocha Tests
           path: 'test-results.json'
           reporter: mocha-json
+          use-actions-summary: false
