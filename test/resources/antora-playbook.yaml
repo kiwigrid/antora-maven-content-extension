@@ -1,6 +1,6 @@
 antora:
   extensions:
-    - require: "."
+    - require: "./../.."
       repositories:
         - baseUrl: http://localhost:8991
       sources:
