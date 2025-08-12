@@ -31,7 +31,8 @@ describe('Maven Content Extension', function () {
         ["3.1.7", 'antoracli-317', 'antoragen-317'],
         ["3.1.8", 'antoracli-318', 'antoragen-318'],
         ["3.1.9", 'antoracli-319', 'antoragen-319'],
-        ["3.1.10", 'antoracli-3110', 'antoragen-3110']
+        ["3.1.10", 'antoracli-3110', 'antoragen-3110'],
+        ["3.1.12", 'antoracli-3112', 'antoragen-3112']
     ];
 
     let testTmpDir;

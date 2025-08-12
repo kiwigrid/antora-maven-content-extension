@@ -57,6 +57,7 @@ describe('Maven Content Extension', function () {
         "3.1.8",
         "3.1.9",
         "3.1.10",
+        "3.1.12"
     ];
 
     const packFileName = `kiwigrid-antora-maven-content-${packageJson.version}.tgz`
