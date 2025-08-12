@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.7.5](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.4...v1.7.5) (2025-08-12)
+
+
+### 🧹 Miscellaneous Chores
+
+* **ci:** test report workflow config ([740857e](https://github.com/kiwigrid/antora-maven-content-extension/commit/740857ee117c43aee985e733ff4886c6f26ed305))
+* **deps-dev:** bump chai from 5.1.2 to 5.2.1 ([dd549cb](https://github.com/kiwigrid/antora-maven-content-extension/commit/dd549cb6f77597ac755d6d1c75179dd02f1bbd73))
+* **deps-dev:** bump chai from 5.1.2 to 5.2.1 ([4b15560](https://github.com/kiwigrid/antora-maven-content-extension/commit/4b15560df25c0bdd29208e6b917353e0aeb77ba4))
+* **deps-dev:** bump serve-static from 1.16.2 to 2.2.0 ([cbcfc72](https://github.com/kiwigrid/antora-maven-content-extension/commit/cbcfc72e41aeab6def243bb4601196dc6a8cd0a0))
+* **deps-dev:** bump serve-static from 1.16.2 to 2.2.0 ([a92c821](https://github.com/kiwigrid/antora-maven-content-extension/commit/a92c82145d35b5ee2731bba1a56f4ff1323981fa))
+* **deps-dev:** bump testcontainers from 10.18.0 to 11.5.1 ([c5a3a47](https://github.com/kiwigrid/antora-maven-content-extension/commit/c5a3a47ccb4202629ae79bcfc2a5bdb74fd008c8))
+* **deps-dev:** bump testcontainers from 10.18.0 to 11.5.1 ([5991c84](https://github.com/kiwigrid/antora-maven-content-extension/commit/5991c8414e26f176af46210101658365e48e3c6c))
+* **deps-dev:** bump tmp from 0.2.3 to 0.2.4 ([f258d65](https://github.com/kiwigrid/antora-maven-content-extension/commit/f258d65b45cf378486cf7963272c910acbf67375))
+* **deps-dev:** bump tmp from 0.2.3 to 0.2.4 ([4cadf43](https://github.com/kiwigrid/antora-maven-content-extension/commit/4cadf43490e18e1722201ed2a857c791e1787fe1))
+* **deps:** bump semver from 7.6.3 to 7.7.2 ([fff50bb](https://github.com/kiwigrid/antora-maven-content-extension/commit/fff50bb7a7e19390c45f219aff250164646cf5dd))
+* **deps:** bump semver from 7.6.3 to 7.7.2 ([418e8f7](https://github.com/kiwigrid/antora-maven-content-extension/commit/418e8f7316aefd8b9117bc7d132899af25f9795f))
+* update to node 20 ([d123512](https://github.com/kiwigrid/antora-maven-content-extension/commit/d12351280cd87e67c8a92f68c9552536fde26ca7))
+
 ## [1.7.4](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.3...v1.7.4) (2025-08-06)
 
 
