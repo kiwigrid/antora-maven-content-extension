@@ -10,7 +10,7 @@ Also, it's probably more common for Java hackers to refer to published artifacts
 
 > This extension recommends maven artifacts to be versioned according to [SemVer](https://www.npmjs.com/package/semver)
 
-The extension has been tested with Antora `3.0.1` up to `3.1.10`.
+The extension has been tested with Antora `3.0.1` up to `3.1.12`.
 
 ## Usage
 
