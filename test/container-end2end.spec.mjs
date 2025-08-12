@@ -120,8 +120,8 @@ RUN yarn global add --ignore-engines /${packFileName}`));
                     { source: `${testTmpDir}`, target: "/antora", mode: "Z"}
                 ])
                 .withLogConsumer(stream => {
-                    stream.on("data", line => console.log(line));
-                    stream.on("err", line => console.error(line));
+                    stream.on("data", data => console.log(`antora container ${version} stdout: ${data}`));
+                    stream.on("err", data => console.error(`antora container ${version} stderr: ${data}`));
                     stream.on("end", () => console.log(`Antora ${version} container log stream closed`));
                 })
                 .withNetworkMode("host")

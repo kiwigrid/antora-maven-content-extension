@@ -1,6 +1,6 @@
-import { expect, use } from 'chai';
-import * as td from 'testdouble';
-import tdChai  from 'testdouble-chai';
+const { expect, use } = require('chai');
+const td = require('testdouble');
+const tdChai = require('testdouble-chai');
 use(tdChai(td));
 
 let MavenContentSourceExtension, mavenTypes, MavenClient, MavenContentSource, ContentSourceFactory;
@@ -12,7 +12,7 @@ describe('antora maven content extension', function () {
         MavenClient = td.replace('../lib/maven-client')
         MavenContentSource = td.replace('../lib/maven-content-source', td.constructor(['toString', 'addAsSourceToPlaybook']))
         ContentSourceFactory = td.replace('../lib/content-source-factory')
-        MavenContentSourceExtension = (await import('../lib/extension.js')).default
+        MavenContentSourceExtension = require('../lib/extension')
     })
 
     afterEach(function () {

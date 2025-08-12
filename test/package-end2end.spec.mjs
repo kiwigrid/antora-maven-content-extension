@@ -89,10 +89,10 @@ describe('Maven Content Extension', function () {
                     }
                 });
                 antoraProcess.stdout.on('data',  (data) => {
-                    console.log(`antora ${name} stdout: ${data}`);
+                    console.log(`antora package ${name} stdout: ${data}`);
                 });
                 antoraProcess.stderr.on('data',  (data) => {
-                    console.log(`antora ${name} stderr: ${data}`);
+                    console.log(`antora package ${name} stderr: ${data}`);
                 });
             });
 
