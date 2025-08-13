@@ -17,6 +17,14 @@ use(tdChai(td));
 use(chaiFiles);
 const file = chaiFiles.file;
 
+function retry(fn, retries=3, err=null) {
+    if (!retries) {
+        return Promise.reject(err);
+    }
+    return fn().catch(nextErr => {
+        return retry(fn, (retries - 1), `Failed with retries ${retries} left: ${nextErr}\n${err}`);
+    });
+}
 
 async function observeAndLogStreams(process, name) {
     await new Promise((resolve, reject) => {
@@ -114,7 +122,8 @@ RUN yarn global add --ignore-engines /${packFileName}`));
             await writeFile(`${testTmpDir}/Dockerfile`, testDockerFile);
             await copyFile(extensionTarball, `${testTmpDir}/${packFileName}`);
             await mkdir(`${testTmpDir}/build`);
-            const container = await new GenericContainerBuilder(testTmpDir, "Dockerfile").build()
+            const containerBuilder = new GenericContainerBuilder(testTmpDir, "Dockerfile");
+            const container = await retry(() => containerBuilder.build())
             antoraContainer = await container
                 .withBindMounts([
                     { source: `${process.cwd()}/test/resources/antora-playbook.container.yaml`, target: "/antora-playbook.yaml", mode: "ro"},
