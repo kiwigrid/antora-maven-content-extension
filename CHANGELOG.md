@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.7](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.6...v1.7.7) (2025-08-14)
+
+
+### 🐛 Bug Fixes
+
+* use mavenSettings with antora 3.1+ ([26d63a0](https://github.com/kiwigrid/antora-maven-content-extension/commit/26d63a0df992e6c010a8b541998b17e90df9a4d9))
+* use mavenSettings with antora 3.1+ ([a18b3de](https://github.com/kiwigrid/antora-maven-content-extension/commit/a18b3de7b08dd66e668ca7c6ab231f6642cc19b0))
+
 ## [1.7.6](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.5...v1.7.6) (2025-08-13)
 
 
