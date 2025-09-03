@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.7.8](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.7...v1.7.8) (2025-09-03)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump chai from 5.2.1 to 5.3.1 ([e1e3d9f](https://github.com/kiwigrid/antora-maven-content-extension/commit/e1e3d9f0a65931e8c9bd10a2dd8cdf04a8c5b958))
+* **deps-dev:** bump chai from 5.3.1 to 6.0.0 ([f6f254a](https://github.com/kiwigrid/antora-maven-content-extension/commit/f6f254a03903f7bf3965ea061750e6d3ebdaa42d))
+* **deps-dev:** bump chai from 6.0.0 to 6.0.1 ([1a0c6c9](https://github.com/kiwigrid/antora-maven-content-extension/commit/1a0c6c94bfb82920c355ae0fc04ec26bcd60f4ae))
+* **deps-dev:** bump mocha from 11.7.1 to 11.7.2 ([eda8f79](https://github.com/kiwigrid/antora-maven-content-extension/commit/eda8f79ddc75bd4b7fa2dfcef90b7154e6801c89))
+* **deps:** bump GoogleCloudPlatform/release-please-action ([504aaa8](https://github.com/kiwigrid/antora-maven-content-extension/commit/504aaa824e7564abc1383f1dc471bb6720c809a8))
+
 ## [1.7.7](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.6...v1.7.7) (2025-08-14)
 
 
