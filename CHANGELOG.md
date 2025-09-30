@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.7.8](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.7...v1.7.8) (2025-09-30)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump chai from 5.2.1 to 5.3.1 ([e1e3d9f](https://github.com/kiwigrid/antora-maven-content-extension/commit/e1e3d9f0a65931e8c9bd10a2dd8cdf04a8c5b958))
+* **deps-dev:** bump chai from 5.3.1 to 6.0.0 ([f6f254a](https://github.com/kiwigrid/antora-maven-content-extension/commit/f6f254a03903f7bf3965ea061750e6d3ebdaa42d))
+* **deps-dev:** bump chai from 6.0.0 to 6.0.1 ([1a0c6c9](https://github.com/kiwigrid/antora-maven-content-extension/commit/1a0c6c94bfb82920c355ae0fc04ec26bcd60f4ae))
+* **deps-dev:** bump chai from 6.0.1 to 6.2.0 ([32b6a28](https://github.com/kiwigrid/antora-maven-content-extension/commit/32b6a28874890f415c0a39819140721e52ecc0aa))
+* **deps-dev:** bump mocha from 11.7.1 to 11.7.2 ([eda8f79](https://github.com/kiwigrid/antora-maven-content-extension/commit/eda8f79ddc75bd4b7fa2dfcef90b7154e6801c89))
+* **deps-dev:** bump testcontainers from 11.5.1 to 11.6.0 ([869f0aa](https://github.com/kiwigrid/antora-maven-content-extension/commit/869f0aad4315856ac2fa5fcbf0938f1f3a621ac6))
+* **deps-dev:** bump testcontainers from 11.6.0 to 11.7.0 ([c6db296](https://github.com/kiwigrid/antora-maven-content-extension/commit/c6db296e3808a964d6413ebd8c6987081c066aef))
+* **deps:** bump actions/setup-node from 4 to 5 ([6002bf9](https://github.com/kiwigrid/antora-maven-content-extension/commit/6002bf986caccf3051b5e60cb7f209e872542957))
+* **deps:** bump brace-expansion ([b5ad18e](https://github.com/kiwigrid/antora-maven-content-extension/commit/b5ad18e6745e358cefed1d8e153e8a3eb9a7d04e))
+* **deps:** bump GoogleCloudPlatform/release-please-action ([504aaa8](https://github.com/kiwigrid/antora-maven-content-extension/commit/504aaa824e7564abc1383f1dc471bb6720c809a8))
+* **deps:** bump tar from 7.4.3 to 7.4.4 ([936d2d8](https://github.com/kiwigrid/antora-maven-content-extension/commit/936d2d86ade7325c94dd6b9b053c351556ab8ebf))
+* **deps:** bump tar from 7.4.4 to 7.5.1 ([6978038](https://github.com/kiwigrid/antora-maven-content-extension/commit/6978038415d4bb2b9309c04be32c32932dc62eca))
+* **deps:** bump tar-fs from 3.1.0 to 3.1.1 ([2e19278](https://github.com/kiwigrid/antora-maven-content-extension/commit/2e19278f96ee1556565d86c30a13dffb9b88b5db))
+
 ## [1.7.7](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.6...v1.7.7) (2025-08-14)
 
 
