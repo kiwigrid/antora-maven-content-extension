@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.7.9](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.8...v1.7.9) (2025-10-09)
+
+
+### 🐛 Bug Fixes
+
+* use native http client, drop node-fetch dependency ([a46e273](https://github.com/kiwigrid/antora-maven-content-extension/commit/a46e27391aea274a8143f17973f528a17c9b977b))
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump mocha from 11.7.2 to 11.7.4 ([a5baee1](https://github.com/kiwigrid/antora-maven-content-extension/commit/a5baee106323d6b317c96720530b620c831321a3))
+* **deps-dev:** bump testcontainers from 11.7.0 to 11.7.1 ([f4971dc](https://github.com/kiwigrid/antora-maven-content-extension/commit/f4971dc02d26144357c399ab98c08090480cd3ea))
+* **deps:** bump semver from 7.7.2 to 7.7.3 ([d684cbc](https://github.com/kiwigrid/antora-maven-content-extension/commit/d684cbc78883dacd95daefc074567f487761fa50))
+
 ## [1.7.8](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.7...v1.7.8) (2025-09-30)
 
 
