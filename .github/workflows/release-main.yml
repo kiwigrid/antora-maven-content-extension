@@ -3,6 +3,11 @@ on:
     branches:
       - main
 name: release-please
+
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
   release-please:
     runs-on: ubuntu-latest
@@ -23,6 +28,4 @@ jobs:
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}
