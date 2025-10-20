@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.10](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.9...v1.7.10) (2025-10-20)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump actions/setup-node from 5 to 6 ([d0c5351](https://github.com/kiwigrid/antora-maven-content-extension/commit/d0c53517bd39bcbef6f176535b461eb6820d5dfe))
+
 ## [1.7.9](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.8...v1.7.9) (2025-10-09)
 
 
