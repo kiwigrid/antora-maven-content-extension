@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.11](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.10...v1.7.11) (2025-10-24)
+
+
+### 🧹 Miscellaneous Chores
+
+* **ci:** grant write permission to release please ([1a2d24c](https://github.com/kiwigrid/antora-maven-content-extension/commit/1a2d24cd31fdf84d6624a0540d0ba28894b4934a))
+* **ci:** update release please manifest ([c8a6582](https://github.com/kiwigrid/antora-maven-content-extension/commit/c8a6582d570daa996e1dc7306eced45dbb231bfb))
+* **docs:** add 1.7.10 to changelog ([#250](https://github.com/kiwigrid/antora-maven-content-extension/issues/250)) ([502f575](https://github.com/kiwigrid/antora-maven-content-extension/commit/502f575e8bb08847e308efe1f8bb6ecd737c9321))
+
 ## [1.7.10](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.9...v1.7.10) (2025-10-24)
 
 ### 🧹 Miscellaneous Chores
