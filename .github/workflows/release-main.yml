@@ -23,11 +23,12 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
-          auth-type: 'oidc'
           scope: '@kiwigrid'
           cache: 'npm'      
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
+      # Ensure npm 11.5.1 or later for trusted publishing
+      - run: npm install -g npm@latest
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish --access public
