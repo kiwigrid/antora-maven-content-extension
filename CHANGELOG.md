@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.14](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.13...v1.7.14) (2025-10-24)
+
+
+### 🧹 Miscellaneous Chores
+
+* **ci:** fix workflow on non-release runs ([caa6009](https://github.com/kiwigrid/antora-maven-content-extension/commit/caa60094d582aef12b1dfefecc4b4a72f971626b))
+
 ## [1.7.13](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.12...v1.7.13) (2025-10-24)
 
 
