@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.12](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.11...v1.7.12) (2025-10-24)
+
+
+### 🧹 Miscellaneous Chores
+
+* **ci:** configure oidc auth for setup-node ([ff6156b](https://github.com/kiwigrid/antora-maven-content-extension/commit/ff6156b56e173d5c94aa030982633425704b7c37))
+
 ## [1.7.11](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.10...v1.7.11) (2025-10-24)
 
 
