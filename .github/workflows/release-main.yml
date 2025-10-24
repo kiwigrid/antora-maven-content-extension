@@ -29,6 +29,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       # Ensure npm 11.5.1 or later for trusted publishing
       - run: npm install -g npm@latest
+        if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish --access public
