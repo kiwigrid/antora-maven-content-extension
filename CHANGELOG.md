@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.13](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.12...v1.7.13) (2025-10-24)
+
+
+### 🧹 Miscellaneous Chores
+
+* **ci:** Ensure latest npm version for trusted publishing ([bca9129](https://github.com/kiwigrid/antora-maven-content-extension/commit/bca912988d84b505f11d469b7317cadc3f3919dd))
+
 ## [1.7.12](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.11...v1.7.12) (2025-10-24)
 
 
