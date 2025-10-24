@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.10](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.9...v1.7.10) (2025-10-24)
+
+### 🧹 Miscellaneous Chores
+
+* **deps**: bump actions/setup-node from 5 to 6 by @dependabot[bot] in https://github.com/kiwigrid/antora-maven-content-extension/pull/246
+* **deps-dev**: bump testcontainers from 11.7.1 to 11.7.2 by @dependabot[bot] in https://github.com/kiwigrid/antora-maven-content-extension/pull/248
+* **deps**: bump GoogleCloudPlatform/release-please-action from 4.3 to 4.4 by @dependabot[bot] in https://github.com/kiwigrid/antora-maven-content-extension/pull/249
+
 ## [1.7.9](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.8...v1.7.9) (2025-10-09)
 
 
