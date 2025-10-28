@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.14](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.13...v1.7.14) (2025-10-28)
+
+
+### 🧹 Miscellaneous Chores
+
+* **ci:** fix workflow on non-release runs ([caa6009](https://github.com/kiwigrid/antora-maven-content-extension/commit/caa60094d582aef12b1dfefecc4b4a72f971626b))
+* **deps:** bump actions/download-artifact from 5 to 6 ([#256](https://github.com/kiwigrid/antora-maven-content-extension/issues/256)) ([5cd6b95](https://github.com/kiwigrid/antora-maven-content-extension/commit/5cd6b950fec6da4dbda3c2c60e86ee169f5118af))
+* **deps:** bump actions/upload-artifact from 4 to 5 ([#255](https://github.com/kiwigrid/antora-maven-content-extension/issues/255)) ([912e43d](https://github.com/kiwigrid/antora-maven-content-extension/commit/912e43d0a907bbefd0e4f6bd41f7b6b10c182a4a))
+
 ## [1.7.13](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.12...v1.7.13) (2025-10-24)
 
 
