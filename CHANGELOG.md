@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.15](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.14...v1.7.15) (2025-11-21)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump actions/checkout from 5 to 6 ([#263](https://github.com/kiwigrid/antora-maven-content-extension/issues/263)) ([5832a86](https://github.com/kiwigrid/antora-maven-content-extension/commit/5832a864826c6ce61967255c03e39a1d17287c06))
+
 ## [1.7.14](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.13...v1.7.14) (2025-11-17)
 
 
