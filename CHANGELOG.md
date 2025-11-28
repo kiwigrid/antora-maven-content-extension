@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.15](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.14...v1.7.15) (2025-11-28)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump testcontainers from 11.8.1 to 11.9.0 ([#265](https://github.com/kiwigrid/antora-maven-content-extension/issues/265)) ([bca08df](https://github.com/kiwigrid/antora-maven-content-extension/commit/bca08dfdec6f42b135553765101b0d9b8281167f))
+* **deps:** bump actions/checkout from 5 to 6 ([#263](https://github.com/kiwigrid/antora-maven-content-extension/issues/263)) ([5832a86](https://github.com/kiwigrid/antora-maven-content-extension/commit/5832a864826c6ce61967255c03e39a1d17287c06))
+
 ## [1.7.14](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.13...v1.7.14) (2025-11-17)
 
 
