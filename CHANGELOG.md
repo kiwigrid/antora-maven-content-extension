@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.15](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.14...v1.7.15) (2025-12-16)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump finalhandler from 2.1.0 to 2.1.1 ([#266](https://github.com/kiwigrid/antora-maven-content-extension/issues/266)) ([d955284](https://github.com/kiwigrid/antora-maven-content-extension/commit/d9552841f787cd17ef9d602c7e6c2b7de1be6350))
+* **deps-dev:** bump serve-static from 2.2.0 to 2.2.1 ([#270](https://github.com/kiwigrid/antora-maven-content-extension/issues/270)) ([6a83864](https://github.com/kiwigrid/antora-maven-content-extension/commit/6a83864af0003803c196df5a685c8fd77bc9f5bb))
+* **deps-dev:** bump testcontainers from 11.8.1 to 11.9.0 ([#265](https://github.com/kiwigrid/antora-maven-content-extension/issues/265)) ([bca08df](https://github.com/kiwigrid/antora-maven-content-extension/commit/bca08dfdec6f42b135553765101b0d9b8281167f))
+* **deps-dev:** bump testcontainers from 11.9.0 to 11.10.0 ([#267](https://github.com/kiwigrid/antora-maven-content-extension/issues/267)) ([4b2fa6a](https://github.com/kiwigrid/antora-maven-content-extension/commit/4b2fa6a010ee45bb86fc295319b38dd06564c4b8))
+* **deps:** bump actions/checkout from 5 to 6 ([#263](https://github.com/kiwigrid/antora-maven-content-extension/issues/263)) ([5832a86](https://github.com/kiwigrid/antora-maven-content-extension/commit/5832a864826c6ce61967255c03e39a1d17287c06))
+* **deps:** bump actions/download-artifact from 6 to 7 ([#268](https://github.com/kiwigrid/antora-maven-content-extension/issues/268)) ([2747bfc](https://github.com/kiwigrid/antora-maven-content-extension/commit/2747bfc91ec568e4b153c6759113a11ad2484290))
+* **deps:** bump actions/upload-artifact from 5 to 6 ([#269](https://github.com/kiwigrid/antora-maven-content-extension/issues/269)) ([019fb48](https://github.com/kiwigrid/antora-maven-content-extension/commit/019fb4848b22b070a8b387f6744e26acd04f25c0))
+
 ## [1.7.14](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.13...v1.7.14) (2025-11-17)
 
 
