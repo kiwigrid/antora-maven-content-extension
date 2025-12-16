@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
       - uses: romeovs/lcov-reporter-action@v0.4.0
         with:
           lcov-file: "test-results/coverage/lcov.info"
