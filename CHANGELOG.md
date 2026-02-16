@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.18](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.17...v1.7.18) (2026-02-16)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump semver from 7.7.3 to 7.7.4 ([#281](https://github.com/kiwigrid/antora-maven-content-extension/issues/281)) ([0ca3452](https://github.com/kiwigrid/antora-maven-content-extension/commit/0ca34520858b0d180925e9f393e510afbfb4231c))
+* **deps:** bump tar from 7.5.6 to 7.5.7 ([#280](https://github.com/kiwigrid/antora-maven-content-extension/issues/280)) ([a933562](https://github.com/kiwigrid/antora-maven-content-extension/commit/a9335629509ec7b56824793cc001eb93bdbd0cee))
+* **deps:** bump tar from 7.5.7 to 7.5.9 ([#283](https://github.com/kiwigrid/antora-maven-content-extension/issues/283)) ([f784712](https://github.com/kiwigrid/antora-maven-content-extension/commit/f7847125600c2431a201fd2dca0fd38595115ba8))
+
 ## [1.7.17](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.16...v1.7.17) (2026-01-22)
 
 
