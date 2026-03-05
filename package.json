@@ -1,6 +1,6 @@
 {
 	"name": "@kiwigrid/antora-maven-content",
-	"version": "1.7.18",
+	"version": "1.7.19",
 	"description": "Antora 3 extension to source documentation from maven repositories.",
 	"contributors": [
 		{

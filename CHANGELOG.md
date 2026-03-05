@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.19](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.18...v1.7.19) (2026-03-05)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump nyc from 17.1.0 to 18.0.0 ([#286](https://github.com/kiwigrid/antora-maven-content-extension/issues/286)) ([d0edbf6](https://github.com/kiwigrid/antora-maven-content-extension/commit/d0edbf680a8b6d3af95b6126d56034bc74b6614a))
+* **deps-dev:** bump testcontainers from 11.11.0 to 11.12.0 ([#284](https://github.com/kiwigrid/antora-maven-content-extension/issues/284)) ([6f42bfe](https://github.com/kiwigrid/antora-maven-content-extension/commit/6f42bfe79231f41eb8c86a2480e15656c45c0eb3))
+* **deps:** bump actions/download-artifact from 7 to 8 ([#287](https://github.com/kiwigrid/antora-maven-content-extension/issues/287)) ([e7f7800](https://github.com/kiwigrid/antora-maven-content-extension/commit/e7f78006b07f7c1fb2309096eeda828e2e39301f))
+* **deps:** bump actions/upload-artifact from 6 to 7 ([#288](https://github.com/kiwigrid/antora-maven-content-extension/issues/288)) ([971fd97](https://github.com/kiwigrid/antora-maven-content-extension/commit/971fd979442d1c4362b62c4c2b348bdd630ad343))
+* **deps:** bump minimatch ([#289](https://github.com/kiwigrid/antora-maven-content-extension/issues/289)) ([1adfc74](https://github.com/kiwigrid/antora-maven-content-extension/commit/1adfc7416bbf898134db868f103de117054c39f8))
+* **deps:** bump tar from 7.5.9 to 7.5.10 ([#290](https://github.com/kiwigrid/antora-maven-content-extension/issues/290)) ([9ef61ea](https://github.com/kiwigrid/antora-maven-content-extension/commit/9ef61ea02286315627f31fddaae638d623544866))
+
 ## [1.7.18](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.17...v1.7.18) (2026-02-16)
 
 
