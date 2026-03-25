@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.21](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.20...v1.7.21) (2026-03-25)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump testcontainers from 11.12.0 to 11.13.0 ([#294](https://github.com/kiwigrid/antora-maven-content-extension/issues/294)) ([30ebe8e](https://github.com/kiwigrid/antora-maven-content-extension/commit/30ebe8ec7cffb709719648904e556125cd21221c))
+* **deps:** bump dorny/test-reporter from 2 to 3 ([#296](https://github.com/kiwigrid/antora-maven-content-extension/issues/296)) ([d4b0cc6](https://github.com/kiwigrid/antora-maven-content-extension/commit/d4b0cc6ef1de91c5f8ad0bd7e7f40b199b3608f3))
+* **deps:** bump tar from 7.5.11 to 7.5.13 ([#297](https://github.com/kiwigrid/antora-maven-content-extension/issues/297)) ([05edcd3](https://github.com/kiwigrid/antora-maven-content-extension/commit/05edcd39af61f6e535c8d87fbc3c7034a16f8e1e))
+
 ## [1.7.20](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.19...v1.7.20) (2026-03-16)
 
 
