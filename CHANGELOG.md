@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.22](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.21...v1.7.22) (2026-03-26)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump picomatch ([#299](https://github.com/kiwigrid/antora-maven-content-extension/issues/299)) ([1d70655](https://github.com/kiwigrid/antora-maven-content-extension/commit/1d7065583357e511319208814e0e5051ba22307b))
+
 ## [1.7.21](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.20...v1.7.21) (2026-03-25)
 
 
