@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.23](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.22...v1.7.23) (2026-03-30)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump convict from 6.2.4 to 6.2.5 ([#301](https://github.com/kiwigrid/antora-maven-content-extension/issues/301)) ([88748ae](https://github.com/kiwigrid/antora-maven-content-extension/commit/88748ae16459b12efe7135a3856fabd188e2758b))
+* **deps:** bump handlebars from 4.7.8 to 4.7.9 ([#302](https://github.com/kiwigrid/antora-maven-content-extension/issues/302)) ([bb3c98f](https://github.com/kiwigrid/antora-maven-content-extension/commit/bb3c98f7a6f655332af09b00ab324b956ba4a9ce))
+
 ## [1.7.22](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.21...v1.7.22) (2026-03-26)
 
 
