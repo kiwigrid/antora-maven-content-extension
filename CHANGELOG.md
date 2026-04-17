@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.24](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.23...v1.7.24) (2026-04-17)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump protobufjs from 7.5.4 to 7.5.5 ([#307](https://github.com/kiwigrid/antora-maven-content-extension/issues/307)) ([d04ef3b](https://github.com/kiwigrid/antora-maven-content-extension/commit/d04ef3bed61f1236afec57acf0890becdc84e8e0))
+* **deps-dev:** bump testcontainers from 11.13.0 to 11.14.0 ([#304](https://github.com/kiwigrid/antora-maven-content-extension/issues/304)) ([d517f7b](https://github.com/kiwigrid/antora-maven-content-extension/commit/d517f7bb1350eaed22a431c87192384fe9c1e825))
+* **deps:** bump lodash from 4.17.23 to 4.18.1 ([#305](https://github.com/kiwigrid/antora-maven-content-extension/issues/305)) ([749a42a](https://github.com/kiwigrid/antora-maven-content-extension/commit/749a42afdb03cec6d1bc571e889746d3c7cf2b0e))
+
 ## [1.7.23](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.22...v1.7.23) (2026-03-30)
 
 
