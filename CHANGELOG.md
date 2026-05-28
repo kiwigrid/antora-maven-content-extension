@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.7.25](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.24...v1.7.25) (2026-05-28)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump mocha from 11.7.5 to 11.7.6 ([#316](https://github.com/kiwigrid/antora-maven-content-extension/issues/316)) ([82a9d65](https://github.com/kiwigrid/antora-maven-content-extension/commit/82a9d6540bb8056026da68f8b6df0612fccfc2ce))
+* **deps-dev:** bump testcontainers from 11.14.0 to 12.0.0 ([#314](https://github.com/kiwigrid/antora-maven-content-extension/issues/314)) ([03e1f6b](https://github.com/kiwigrid/antora-maven-content-extension/commit/03e1f6bfb7fe8f93d9c082648a06c209b5ce1c9e))
+* **deps-dev:** bump tmp from 0.2.5 to 0.2.7 ([#318](https://github.com/kiwigrid/antora-maven-content-extension/issues/318)) ([f525b67](https://github.com/kiwigrid/antora-maven-content-extension/commit/f525b672106ebaef42dcbcc249409e15da16bd38))
+* **deps:** bump semver from 7.8.0 to 7.8.1 ([#317](https://github.com/kiwigrid/antora-maven-content-extension/issues/317)) ([8eaf437](https://github.com/kiwigrid/antora-maven-content-extension/commit/8eaf437d876516c1ea7f3d140514af6e0d9ce87b))
+
 ## [1.7.24](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.23...v1.7.24) (2026-05-13)
 
 
