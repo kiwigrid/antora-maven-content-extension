@@ -43,10 +43,10 @@ describe('MavenClient', function () {
 
     beforeEach(function () {
         // Mock all dependencies BEFORE requiring the module under test
-        fs = td.replace('fs');
+        fs = td.replace('node:fs');
         // Replace http/https with objects that have a mockable 'request' function.
-        http = td.replace('http', { request: td.func('httpRequest') });
-        https = td.replace('https', { request: td.func('httpsRequest') });
+        http = td.replace('node:http', { request: td.func('httpRequest') });
+        https = td.replace('node:https', { request: td.func('httpsRequest') });
 
         const fakeTar = { extract: td.func() };
         tar = td.replace('tar', fakeTar);
@@ -65,7 +65,7 @@ describe('MavenClient', function () {
         MavenArtifact = types.MavenArtifact;
 
         logger = td.object(['debug', 'info', 'warn']);
-        client = new MavenClient(logger);
+        client = new MavenClient(logger, { maxRetries: 1 });
     });
 
     afterEach(function () {
@@ -245,8 +245,42 @@ describe('MavenClient', function () {
                 expect.fail('Should have thrown');
             } catch (e) {
                 expect(e.message).to.contain('Request to http://localhost');
-                expect(e.message).to.contain('failed: ECONNRESET');
+                expect(e.message).to.contain('failed');
+                expect(e.message).to.contain('ECONNRESET');
             }
+        });
+    });
+    describe('Retry Logic', function () {
+        it('should retry on failure and succeed on the final attempt', async function () {
+            // Re-create client with retries enabled for this test
+            client = new MavenClient(logger, { maxRetries: 3, backoff: 10 });
+
+            const repository = new MavenRepository({ baseUrl: 'http://localhost' });
+            const artifact = new MavenArtifact({ groupId: 'com.example', artifactId: 'dummy', version: '1.0.0' });
+
+            let attempt = 0;
+            td.when(http.request(td.matchers.anything(), td.matchers.isA(Function)))
+                .thenDo((options, callback) => {
+                    attempt++;
+                    const requestStream = new EventEmitter();
+                    requestStream.end = td.func();
+                    if (attempt < 3) {
+                        callback(mockResponse(500, {}, 'Server Error'));
+                    } else {
+                        callback(mockResponse(200, {}, 'Success'));
+                    }
+                    return requestStream;
+                });
+
+
+            const fakeUnzipStream = mockWritableStream();
+            td.when(unzip.Extract({ path: '/tmp' })).thenReturn(fakeUnzipStream);
+
+            await client.downloadAndExtract(repository, '/tmp', artifact);
+
+            // Verify that we tried 3 times in total
+            td.verify(http.request(td.matchers.anything(), td.matchers.isA(Function)), { times: 3 });
+            td.verify(logger.warn(td.matchers.contains('failed with status 500. Retrying...')), { times: 2 });
         });
     });
 
@@ -382,4 +416,3 @@ describe('MavenClient', function () {
         });
     });
 });
-
