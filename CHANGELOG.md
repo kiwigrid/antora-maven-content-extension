@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.8.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.24...v1.8.0) (2026-06-03)
+
+
+### 🎁 Features
+
+* add retry if http requests to maven repositories fail ([#321](https://github.com/kiwigrid/antora-maven-content-extension/issues/321)) ([46a845f](https://github.com/kiwigrid/antora-maven-content-extension/commit/46a845f6ad17043276a123831ae64395df7de514))
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump mocha from 11.7.5 to 11.7.6 ([#316](https://github.com/kiwigrid/antora-maven-content-extension/issues/316)) ([82a9d65](https://github.com/kiwigrid/antora-maven-content-extension/commit/82a9d6540bb8056026da68f8b6df0612fccfc2ce))
+* **deps-dev:** bump testcontainers from 11.14.0 to 12.0.0 ([#314](https://github.com/kiwigrid/antora-maven-content-extension/issues/314)) ([03e1f6b](https://github.com/kiwigrid/antora-maven-content-extension/commit/03e1f6bfb7fe8f93d9c082648a06c209b5ce1c9e))
+* **deps-dev:** bump testcontainers from 12.0.0 to 12.0.1 ([#319](https://github.com/kiwigrid/antora-maven-content-extension/issues/319)) ([7a7b654](https://github.com/kiwigrid/antora-maven-content-extension/commit/7a7b654693b623e559b2d0812b88329c9b1a8c5d))
+* **deps-dev:** bump tmp from 0.2.5 to 0.2.7 ([#318](https://github.com/kiwigrid/antora-maven-content-extension/issues/318)) ([f525b67](https://github.com/kiwigrid/antora-maven-content-extension/commit/f525b672106ebaef42dcbcc249409e15da16bd38))
+* **deps:** bump semver from 7.8.0 to 7.8.1 ([#317](https://github.com/kiwigrid/antora-maven-content-extension/issues/317)) ([8eaf437](https://github.com/kiwigrid/antora-maven-content-extension/commit/8eaf437d876516c1ea7f3d140514af6e0d9ce87b))
+* **deps:** bump tar from 7.5.15 to 7.5.16 ([#320](https://github.com/kiwigrid/antora-maven-content-extension/issues/320)) ([433b2f8](https://github.com/kiwigrid/antora-maven-content-extension/commit/433b2f85e6aaa3316c64fbefa1a02ffd6cad6b1f))
+
 ## [1.7.24](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.23...v1.7.24) (2026-05-13)
 
 
