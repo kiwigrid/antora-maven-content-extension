@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.8.0...v1.8.1) (2026-06-05)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump semver from 7.8.1 to 7.8.2 ([#322](https://github.com/kiwigrid/antora-maven-content-extension/issues/322)) ([5d46300](https://github.com/kiwigrid/antora-maven-content-extension/commit/5d46300bba338c8e1f7e807dc70c268dccf9a0ad))
+
 ## [1.8.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.24...v1.8.0) (2026-06-03)
 
 
