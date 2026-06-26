@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.8.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.8.0...v1.8.1) (2026-06-26)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump @babel/core from 7.24.7 to 7.29.7 ([#331](https://github.com/kiwigrid/antora-maven-content-extension/issues/331)) ([ecb881e](https://github.com/kiwigrid/antora-maven-content-extension/commit/ecb881ed0f6361e646ada0d94f90d844bef78b21))
+* **deps-dev:** bump undici from 7.25.0 to 7.28.0 ([#329](https://github.com/kiwigrid/antora-maven-content-extension/issues/329)) ([8b3e112](https://github.com/kiwigrid/antora-maven-content-extension/commit/8b3e112f0691d0e115b6c739768538c27d3d3c16))
+* **deps:** bump actions/checkout from 6 to 7 ([#328](https://github.com/kiwigrid/antora-maven-content-extension/issues/328)) ([394abb9](https://github.com/kiwigrid/antora-maven-content-extension/commit/394abb98bf48755f820a4fa37176d2d4ff0e3211))
+* **deps:** bump semver from 7.8.1 to 7.8.2 ([#322](https://github.com/kiwigrid/antora-maven-content-extension/issues/322)) ([5d46300](https://github.com/kiwigrid/antora-maven-content-extension/commit/5d46300bba338c8e1f7e807dc70c268dccf9a0ad))
+* **deps:** bump semver from 7.8.2 to 7.8.5 ([#332](https://github.com/kiwigrid/antora-maven-content-extension/issues/332)) ([09cd89a](https://github.com/kiwigrid/antora-maven-content-extension/commit/09cd89ae52ec0b3a5ee1e19430a50fc26fdbb4ea))
+* **deps:** bump tar from 7.5.16 to 7.5.17 ([#333](https://github.com/kiwigrid/antora-maven-content-extension/issues/333)) ([5f9640a](https://github.com/kiwigrid/antora-maven-content-extension/commit/5f9640a1b5bae1012baf27c133e52a26f77a881a))
+* **deps:** bump uuid and istanbul-lib-processinfo ([#330](https://github.com/kiwigrid/antora-maven-content-extension/issues/330)) ([79863a2](https://github.com/kiwigrid/antora-maven-content-extension/commit/79863a27ccfeb5f10897c3e01a98f0d6cb3779a3))
+
 ## [1.8.0](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.7.24...v1.8.0) (2026-06-03)
 
 
