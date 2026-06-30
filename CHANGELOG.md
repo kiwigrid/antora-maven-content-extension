@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.2](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.8.1...v1.8.2) (2026-06-30)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps:** bump tar from 7.5.17 to 7.5.19 ([#334](https://github.com/kiwigrid/antora-maven-content-extension/issues/334)) ([974eeca](https://github.com/kiwigrid/antora-maven-content-extension/commit/974eeca11b395c1108d0944d57e64143c81cddc2))
+
 ## [1.8.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.8.0...v1.8.1) (2026-06-26)
 
 
