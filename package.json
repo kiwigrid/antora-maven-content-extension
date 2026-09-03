@@ -69,6 +69,9 @@
 		"testdouble": "^3.20.2",
 		"testdouble-chai": "^0.5.0"
 	},
+	"overrides": {
+		"js-yaml": "^4.1.0"
+	},
 	"scripts": {
 		"test": "nyc mocha --reporter json --reporter-options output=test-results.json",
 		"dev:test": "mocha --watch"
