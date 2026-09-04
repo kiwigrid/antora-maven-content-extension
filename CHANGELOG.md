@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.8.2](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.8.1...v1.8.2) (2026-09-04)
+
+
+### 🧹 Miscellaneous Chores
+
+* **deps-dev:** bump browserslist from 4.28.2 to 4.28.8 ([#345](https://github.com/kiwigrid/antora-maven-content-extension/issues/345)) ([52ce78e](https://github.com/kiwigrid/antora-maven-content-extension/commit/52ce78ea49c48bd30e3e96bbb7597c93450a5b9f))
+* **deps-dev:** bump mocha from 11.7.6 to 11.8.0 ([#342](https://github.com/kiwigrid/antora-maven-content-extension/issues/342)) ([3b76240](https://github.com/kiwigrid/antora-maven-content-extension/commit/3b7624061b0b686cdad1006d614f5c89cb286d0f))
+* **deps-dev:** bump undici from 7.28.0 to 7.29.0 ([#341](https://github.com/kiwigrid/antora-maven-content-extension/issues/341)) ([82d001f](https://github.com/kiwigrid/antora-maven-content-extension/commit/82d001f1fdb53afe9506221034f12524f03e5580))
+* **deps:** bump brace-expansion ([#344](https://github.com/kiwigrid/antora-maven-content-extension/issues/344)) ([88f36d4](https://github.com/kiwigrid/antora-maven-content-extension/commit/88f36d471f17181a9cad815e0c8fcbd79fb076c1))
+* **deps:** bump serialize-javascript and mocha ([#346](https://github.com/kiwigrid/antora-maven-content-extension/issues/346)) ([faa6155](https://github.com/kiwigrid/antora-maven-content-extension/commit/faa61553d0509f9b6859298d0343f8137806b61c))
+* **deps:** bump tar from 7.5.17 to 7.5.19 ([#334](https://github.com/kiwigrid/antora-maven-content-extension/issues/334)) ([974eeca](https://github.com/kiwigrid/antora-maven-content-extension/commit/974eeca11b395c1108d0944d57e64143c81cddc2))
+* **deps:** bump tar from 7.5.19 to 7.5.22 ([#340](https://github.com/kiwigrid/antora-maven-content-extension/issues/340)) ([ddbe59b](https://github.com/kiwigrid/antora-maven-content-extension/commit/ddbe59b2a72665609cfebc221b08b3c007c82926))
+* **deps:** regenerate package-lock.json ([d334b5d](https://github.com/kiwigrid/antora-maven-content-extension/commit/d334b5d62aa07777973d8ad83c8477c63dabfd1a))
+* override js-yaml to ^4.1.0 to address Dependabot alert ([3435f5f](https://github.com/kiwigrid/antora-maven-content-extension/commit/3435f5f27373d98fec45851a4257202e754b5f3e))
+
 ## [1.8.1](https://github.com/kiwigrid/antora-maven-content-extension/compare/v1.8.0...v1.8.1) (2026-06-26)
 
 
